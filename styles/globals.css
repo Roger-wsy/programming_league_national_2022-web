@@ -4,10 +4,10 @@
 
 @layer base {
   h1 {
-    @apply text-3xl md:text-5xl font-bold;
+    @apply text-5xl font-bold lg:text-7xl;
   }
   h2 {
-    @apply text-2xl md:text-3xl font-bold;
+    @apply text-2xl font-bold md:text-3xl;
   }
   h3 {
     @apply text-xl md:text-2xl;
@@ -87,7 +87,7 @@ html {
 }
 
 .layout {
-  @apply flex flex-col justify-center items-start max-w-4xl px-4 py-8 mx-auto 2xl:max-w-7xl;
+  @apply flex flex-col items-start justify-center max-w-4xl px-4 py-8 mx-auto 2xl:max-w-[95rem];
 }
 
 .side_layout {
@@ -111,7 +111,25 @@ html {
 
 .bg2 {
   background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
+    url("../public/images/bg-2\ 1.png");
+  /* background-color: black; */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2_gif {
+  background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
     url("../public/images/bg-2\ 1.gif");
+  /* background-color: black; */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg4 {
+  background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
+    url("../public/images/image\ 4.gif");
   /* background-color: black; */
   background-position: center center;
   background-size: cover;
@@ -147,4 +165,8 @@ html {
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -ms-transform: rotate(3deg) translate(0px, -4px);
   transform: rotate(3deg) translate(0px, -4px);
+}
+
+.btn_1 {
+  border-bottom-right-radius: 20px 30px;
 }

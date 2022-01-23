@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Sidebar from "../components/Sidebar";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, bg }) => {
   return (
-    <div className="side_layout w-full">
+    <div className="">
       <Sidebar />
-      <div className="w-full">{children}</div>
+      <div className={`h-[100vh] ${bg} side_layout`}>
+        <div className="w-[90px] h-full" />
+        <div className="w-full layout">{children}</div>
+      </div>
     </div>
   );
 };

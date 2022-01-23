@@ -1,24 +1,51 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Sidebar = () => {
   return (
     <div>
-      <div className="bg-transparent fixed top-0 left-0 h-full flex items-center justify-between space-y-5 p-4 w-[80px] flex-col">
-        <div className="flex items-center flex-col">
-          <div className="mb-5">
-            <Image
-              src="/images/PLN-Glitch 1.png"
-              width="300"
-              height="300"
-              alt="logo"
-            />
-          </div>
+      <div className="bg-transparent fixed top-0 left-0 h-full flex items-center justify-between space-y-5 p-6 w-[90px] flex-col">
+        <div className="flex flex-col items-center">
+          <Link href="/">
+            <a className="block">
+              <div className="mb-5">
+                <Image
+                  src="/images/PLN-Glitch 1.png"
+                  width="300"
+                  height="300"
+                  alt="logo"
+                />
+              </div>
+            </a>
+          </Link>
           <div className="space-y-10">
-            <h3 className=" vertical rotate-180">ABOUT US</h3>
-            <h3 className=" vertical rotate-180">OVERVIEW</h3>
-            <h3 className=" vertical rotate-180">FAQ</h3>
-            <h3 className=" vertical rotate-180">RESULTS</h3>
-            <h3 className=" vertical rotate-180">ANNOUNCEMENT</h3>
+            <Link href="/about">
+              <a className="block">
+                <h3 className="rotate-180 cursor-pointer vertical">ABOUT US</h3>
+              </a>
+            </Link>
+            <Link href="/overview">
+              <a className="block">
+                <h3 className="rotate-180 cursor-pointer vertical">OVERVIEW</h3>
+              </a>
+            </Link>
+            <Link href="/faq">
+              <a className="block">
+                <h3 className="rotate-180 cursor-pointer vertical">FAQ</h3>
+              </a>
+            </Link>
+            <Link href="/results">
+              <a className="block">
+                <h3 className="rotate-180 cursor-pointer vertical">RESULTS</h3>
+              </a>
+            </Link>
+            <Link href="/announcement">
+              <a className="block">
+                <h3 className="rotate-180 cursor-pointer vertical">
+                  ANNOUNCEMENT
+                </h3>
+              </a>
+            </Link>
           </div>
         </div>
         <div className="space-y-4">
