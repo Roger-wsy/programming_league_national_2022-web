@@ -1,7 +1,21 @@
 import Head from "next/head";
 import Layout from "../layouts/Layout";
+import { motion } from "framer-motion"
 
 export default function Home() {
+  // variant for about title
+  const variants = {
+    before:{
+      y:80,
+      x:-20,
+      opacity:0
+    },
+    after:{
+      y:0,
+      x:0,
+      opacity:1
+    }
+  }
   return (
     <div>
       <Head>
@@ -13,18 +27,21 @@ export default function Home() {
         <div className="grid w-full grid-cols-2 gap-4">
           <div>
             {/*  eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/image 3.png" alt="3" />
-            <div className="relative my-10">
-              <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
-                ABOUT US
-              </h1>
-              <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
-                ABOUT US
-              </h1>
-              <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
-                ABOUT US
-              </h1>
-            </div>
+            {/*about motion div */}
+            <motion.div initial="before" animate="after" variants={variants} transition={{duration:0.5}}>
+              <img src="/images/image 3.png" alt="3" />
+              <div className="relative my-10">
+                <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
+                  ABOUT US
+                </h1>
+                <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
+                  ABOUT US
+                </h1>
+                <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
+                  ABOUT US
+                </h1>
+              </div>
+            </motion.div>
             <p className="mb-10 text-2xl font-medium tracking-widest text-justify md:text-3xl">
               Programming League National is an annual competitive programming
               contest organised by the Faculty of Computer Science and
