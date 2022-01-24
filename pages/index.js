@@ -1,7 +1,16 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 
 export default function Home() {
+  const variant = {
+    before:{
+      opacity:0
+    },
+    after:{
+      opacity:1
+    }
+  }
   return (
     <div>
       <Head>
@@ -11,7 +20,7 @@ export default function Home() {
       </Head>
       <Layout bg="bg1">
         <div className="grid w-full grid-cols-2 gap-4">
-          <div>
+          <motion.div variants={variant} initial="before" animate="after" transition={{duration:1}}>
             <div>
               <div className="relative mb-4">
                 <h6 className="text-4xl md:text-[40px] tracking-widest font-extralight text-[white] z-10 absolute -top-[3px] -left-[3px]">
@@ -99,15 +108,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex items-center">
+          </motion.div>
+          <motion.div className="flex items-center" variants={variant} initial="before" animate="after" transition={{duration:1}}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/PLN-Glitch 1.gif"
               alt="logo"
               className="object-contain w-full h-[400px]"
             />
-          </div>
+          </motion.div>
         </div>
       </Layout>
     </div>

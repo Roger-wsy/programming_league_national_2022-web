@@ -170,3 +170,15 @@ html {
 .btn_1 {
   border-bottom-right-radius: 20px 30px;
 }
+
+.strike{
+  text-decoration: none;
+}
+
+.strike:hover{
+  text-shadow:0 0 30px #00C2FF
+}
+
+.active{
+  text-shadow:0 0 30px white
+}
