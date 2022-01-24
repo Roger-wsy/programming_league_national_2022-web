@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 import { motion } from "framer-motion"
+import { useContext } from "react";
+import { StateContext } from "../store/state-context";
 
 export default function Home() {
+  const ctx = useContext(StateContext)
   // variant for about title
   const variants = {
     before:{

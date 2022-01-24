@@ -1,18 +1,43 @@
 import Head from "next/head";
 import TopLayout from "../layouts/TopLayout";
 import { motion } from "framer-motion"
+import { useContext } from "react/cjs/react.development";
+import { StateContext } from "../store/state-context";
 
 export default function Home() {
+  const ctx = useContext(StateContext)
   const variant ={
-    before:{
+    normal:{
+      opacity:0
+    },
+    aboutus:{
+      top:"calc(100vh - 90vh)",
+      opacity:0.3
+    },
+    overview:{
       left:"calc(100vw - 60%)",
       opacity:0.3
     },
+    results:{
+      left:"calc(70vw - 60%)",
+      opacity:0.3
+    },
     after:{
+      y:0,
       top:"auto",
       left:"auto",
       opacity:1
     }
+  }
+  let animationType = "normal"
+  if(ctx.preState==="overview"){
+    animationType = "overview"
+  }else if(ctx.preState==="aboutus"){
+    animationType = "aboutus"
+  }else if(ctx.preState==="results"){
+    animationType = "results"
+  }else{
+    animationType = "normal"
   }
   return (
     <div>
@@ -22,7 +47,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TopLayout bg="bg1">
-        <motion.div className="pt-10 relative" initial="before" variants={variant} animate="after" transition={{duration:0.5,ease:"easeOut"}}>
+        <motion.div className="pt-10 relative" initial={animationType} variants={variant} animate="after" transition={{duration:0.5,ease:"easeOut"}}>
           {/*  eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/image 3.png" alt="3" />
           <div className="relative my-10">

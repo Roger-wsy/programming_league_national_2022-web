@@ -1,13 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useContext, useEffect } from "react";
+import { StateContext } from "../store/state-context";
 
 const Sidebar = () => {
+  const ctx = useContext(StateContext)
+
+  const changePreviousState = (state) => {
+    ctx.changePreState(state)
+  }
+  const changeCurrentState = (state) => {
+    ctx.changeCurState(state)
+  }
+  const changeState = (state)=>{
+    changePreviousState(ctx.curState)
+    changeCurrentState(state)
+  }
   return (
     <div>
       <div className="bg-transparent fixed top-0 left-0 h-full flex items-center justify-between space-y-5 p-6 w-[90px] flex-col">
-        <div className="flex flex-col items-center">
-          <Link href="/">
-            <a className="block">
+        <div className="flex flex-col items-center" >
+          <Link href="/" >
+            <a className="block" onClick={()=>{changeState("")}}>
               <div className="mb-5">
                 <Image
                   src="/images/PLN-Glitch 1.png"
@@ -18,28 +32,28 @@ const Sidebar = () => {
               </div>
             </a>
           </Link>
-          <div className="space-y-10">
-            <Link href="/about">
-              <a className="block">
+          <div className="space-y-10" >
+            <Link href="/about" >
+              <a className="block" onClick={()=>{changeState("aboutus")}}>
                 <h3 className="rotate-180 cursor-pointer vertical">ABOUT US</h3>
               </a>
             </Link>
-            <Link href="/overview">
-              <a className="block">
+            <Link href="/overview" >
+              <a className="block" onClick={()=>{changeState("overview")}}>
                 <h3 className="rotate-180 cursor-pointer vertical">OVERVIEW</h3>
               </a>
             </Link>
-            <Link href="/faq">
-              <a className="block">
+            <Link href="/faq" >
+              <a className="block" onClick={()=>{changeState("faq")}}>
                 <h3 className="rotate-180 cursor-pointer vertical">FAQ</h3>
               </a>
             </Link>
             <Link href="/results">
-              <a className="block">
+              <a className="block"  onClick={()=>{changeState("results")}}>
                 <h3 className="rotate-180 cursor-pointer vertical">RESULTS</h3>
               </a>
             </Link>
-            <Link href="/announcement">
+            <Link href="/announcement" onClick={()=>{changeState("announcement")}}>
               <a className="block">
                 <h3 className="rotate-180 cursor-pointer vertical">
                   ANNOUNCEMENT

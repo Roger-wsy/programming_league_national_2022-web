@@ -1,19 +1,43 @@
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 import { motion } from "framer-motion"
+import { useContext } from "react";
+import { StateContext } from "../store/state-context";
 
 export default function Home() {
+  const ctx = useContext(StateContext)
   const variant ={
-    before:{
+    normal:{
+      opacity:0.0
+    },
+    aboutus:{
       top:"calc(100vh - 97%)",
       left:"-100%",
       opacity:0.3
+    },
+    faq:{
+      left:"-100%",
+      opacity:0.3
+    },
+    results:{
+      opacity:0.3,
+      left:"calc(20vw - 100%)",
     },
     after:{
       top:"auto",
       left:"auto",
       opacity:1.0
     }
+  }
+  let animationType = "normal"
+  if(ctx.preState==="aboutus"){
+    animationType = "aboutus"
+  }else if(ctx.preState==="faq"){
+    animationType = "faq"
+  }else if(ctx.preState==="results"){
+    animationType = "results"
+  }else{
+    animationType = "normal"
   }
   return (
     <div>
@@ -32,7 +56,7 @@ export default function Home() {
               className="object-contain w-full h-[600px]"
             />
           </div>
-          <motion.div variants={variant} initial="before" animate="after" transition={{duration:0.5}} className="pt-10 relative">
+          <motion.div variants={variant} initial={animationType} animate="after" transition={{duration:0.5}} className="pt-10 relative">
             {/*  eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/image 3.png" alt="3" />
             <div className="relative my-10" >
