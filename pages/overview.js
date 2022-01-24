@@ -1,7 +1,20 @@
 import Head from "next/head";
 import Layout from "../layouts/Layout";
+import { motion } from "framer-motion"
 
 export default function Home() {
+  const variant ={
+    before:{
+      top:"calc(100vh - 95%)",
+      left:"-100%",
+      opacity:0.5
+    },
+    after:{
+      top:"auto",
+      left:"auto",
+      opacity:1
+    }
+  }
   return (
     <div>
       <Head>
@@ -10,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout bg="bg2_gif">
-        <div className="grid w-full grid-cols-2 gap-4">
+        <div className="grid w-full grid-cols-2 gap-4 h-full">
           <div className="flex items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -19,10 +32,10 @@ export default function Home() {
               className="object-contain w-full h-[600px]"
             />
           </div>
-          <div>
+          <motion.div variants={variant} initial="before" animate="after" transition={{duration:0.5}} className="pt-10 relative">
             {/*  eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/image 3.png" alt="3" />
-            <div className="relative my-10">
+            <div className="relative my-10" >
               <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
                 OVERVIEW
               </h1>
@@ -36,7 +49,7 @@ export default function Home() {
             <p className="mb-10 text-2xl font-medium tracking-widest text-justify h-80 md:text-3xl">
               Lorem, ipsum.
             </p>
-          </div>
+          </motion.div>
         </div>
       </Layout>
     </div>

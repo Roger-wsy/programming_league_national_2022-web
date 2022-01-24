@@ -1,7 +1,19 @@
 import Head from "next/head";
 import TopLayout from "../layouts/TopLayout";
+import { motion } from "framer-motion"
 
 export default function Home() {
+  const variant ={
+    before:{
+      left:"calc(100vw - 60%)",
+      opacity:0.5
+    },
+    after:{
+      top:"auto",
+      left:"auto",
+      opacity:1
+    }
+  }
   return (
     <div>
       <Head>
@@ -10,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TopLayout bg="bg1">
-        <div className="pt-10">
+        <motion.div className="pt-10 relative" initial="before" variants={variant} animate="after" transition={{duration:0.5}}>
           {/*  eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/image 3.png" alt="3" />
           <div className="relative my-10">
@@ -24,7 +36,7 @@ export default function Home() {
               FAQ
             </h1>
           </div>
-        </div>
+        </motion.div>
         <div className="grid w-full grid-cols-2 gap-4"></div>
       </TopLayout>
     </div>
