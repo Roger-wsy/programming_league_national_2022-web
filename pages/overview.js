@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function Home() {
   const variant ={
     before:{
-      top:"calc(100vh - 95%)",
+      top:"calc(100vh - 97%)",
       left:"-100%",
       opacity:0.5
     },
