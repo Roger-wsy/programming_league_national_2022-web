@@ -6,7 +6,7 @@ export default function Home() {
   const variant ={
     before:{
       left:"calc(100vw - 60%)",
-      opacity:0.5
+      opacity:0.3
     },
     after:{
       top:"auto",
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TopLayout bg="bg1">
-        <motion.div className="pt-10 relative" initial="before" variants={variant} animate="after" transition={{duration:0.5}}>
+        <motion.div className="pt-10 relative" initial="before" variants={variant} animate="after" transition={{duration:0.5,ease:"easeOut"}}>
           {/*  eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/image 3.png" alt="3" />
           <div className="relative my-10">

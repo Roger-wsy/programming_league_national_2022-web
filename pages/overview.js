@@ -7,12 +7,12 @@ export default function Home() {
     before:{
       top:"calc(100vh - 97%)",
       left:"-100%",
-      opacity:0.5
+      opacity:0.3
     },
     after:{
       top:"auto",
       left:"auto",
-      opacity:1
+      opacity:1.0
     }
   }
   return (
