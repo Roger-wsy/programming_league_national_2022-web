@@ -4,31 +4,58 @@ import { motion } from "framer-motion";
 import { useContext } from "react/cjs/react.development";
 import { StateContext } from "../store/state-context";
 
+const logo_variant = {
+  hidden:{
+    opacity:0,
+    scale:1.5,
+  },
+  show:{
+    opacity:1,
+    scale:1,
+  }
+}
+const local_variant = {
+    hidden: { 
+      scale:0.5,
+      opacity: 0.0 
+    },
+    show: {
+        scale:1,
+        opacity: 1,
+        transition: {
+          duration:0.5
+          
+        }
+      }
+  }
+
+const variant = {
+  normal: {
+    opacity: 0,
+  },
+  aboutus: {
+    top: "calc(100vh - 90vh)",
+    opacity: 0.3,
+  },
+  overview: {
+    left: "calc(100vw - 60%)",
+    opacity: 0.3,
+  },
+  results: {
+    left: "calc(70vw - 60%)",
+    opacity: 0.3,
+  },
+  after: {
+    y: 0,
+    top: "auto",
+    left: "auto",
+    opacity: 1,
+  },
+};
+
 export default function Home() {
   const ctx = useContext(StateContext);
-  const variant = {
-    normal: {
-      opacity: 0,
-    },
-    aboutus: {
-      top: "calc(100vh - 90vh)",
-      opacity: 0.3,
-    },
-    overview: {
-      left: "calc(100vw - 60%)",
-      opacity: 0.3,
-    },
-    results: {
-      left: "calc(70vw - 60%)",
-      opacity: 0.3,
-    },
-    after: {
-      y: 0,
-      top: "auto",
-      left: "auto",
-      opacity: 1,
-    },
-  };
+
   let animationType = "normal";
   if (ctx.preState === "overview") {
     animationType = "overview";
@@ -73,7 +100,12 @@ export default function Home() {
             {Array(10)
               .fill()
               .map((_, i) => (
-                <div key={i} className="grid grid-cols-4 gap-10">
+                <motion.div 
+                viewport={{ once: true }}
+                initial="hidden"
+                whileInView="show"
+                variants={local_variant}
+                key={i} className="grid grid-cols-4 gap-10">
                   <div className="col-span-3">
                     <div className="text-lg text-justify border_box">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -89,18 +121,25 @@ export default function Home() {
                       <div className="absolute -top-2 -right-0 w-5 h-1 bg-[#00C2FF]"></div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
           </div>
           <div className="hidden lg:block">
-            <div className="flex items-center h-full">
+            <motion.div className="flex items-center h-full"
+              variants={logo_variant}
+              transition={{
+                duration:1
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/faq 1.gif"
                 alt="logo"
                 className="object-contain w-full max-h-[500px]"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </TopLayout>

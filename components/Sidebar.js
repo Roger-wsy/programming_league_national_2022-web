@@ -56,7 +56,7 @@ const Sidebar = () => {
               </a>
             </Link>
             <Link href="/announcement" >
-              <a className="block" onClick={()=>{changeState("announcement")}} className={router.pathname == "/announcement" ? "active block" : "block"}>
+              <a className="block" onClick={()=>{changeState("")}} className={router.pathname == "/announcement" ? "active block" : "block"}>
                 <h3 className="rotate-180 cursor-pointer vertical strike" >
                   ANNOUNCEMENT
                 </h3>

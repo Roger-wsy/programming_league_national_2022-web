@@ -1,5 +1,30 @@
 import Head from "next/head";
 import TopLayout from "../layouts/TopLayout";
+import { motion } from "framer-motion";
+
+const logo_variant = {
+  hidden:{
+    opacity:0,
+  },
+  show:{
+    opacity:1,
+  }
+}
+
+const local_variant = {
+    hidden: { 
+      scale:0.5,
+      opacity: 0.0 
+    },
+    show: {
+        scale:1,
+        opacity: 1,
+        transition: {
+          duration:0.5
+          
+        }
+      }
+  }
 
 export default function Home() {
   return (
@@ -30,7 +55,12 @@ export default function Home() {
             {Array(10)
               .fill()
               .map((_, i) => (
-                <div key={i} className="grid grid-cols-4 gap-10">
+                <motion.div 
+                viewport={{ once: true }}
+                initial="hidden"
+                whileInView="show"
+                variants={local_variant} 
+                key={i} className="grid grid-cols-4 gap-10">
                   <div className="col-span-3">
                     <div className="text-lg text-justify border_box">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -46,18 +76,25 @@ export default function Home() {
                       <div className="absolute -top-2 -right-0 w-5 h-1 bg-[#00C2FF]"></div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
           </div>
           <div className="hidden lg:block">
-            <div className="flex items-center h-full">
+            <motion.div className="flex items-center h-full"
+              variants={logo_variant}
+              transition={{
+                duration:1
+              }}
+              initial="hidden"
+              animate="show"
+              className="flex items-center h-full">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/faq 2.gif"
                 alt="logo"
                 className="object-contain w-full max-h-[500px]"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </TopLayout>

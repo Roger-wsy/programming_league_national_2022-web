@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 
-export default function Home() {
-  const variant = {
+const variant = {
     before:{
       opacity:0
     },
@@ -11,6 +10,8 @@ export default function Home() {
       opacity:1
     }
   }
+
+export default function Home() {
   return (
     <div>
       <Head>

@@ -4,9 +4,7 @@ import { useContext } from "react/cjs/react.development";
 import Layout from "../layouts/Layout";
 import { StateContext } from "../store/state-context";
 
-export default function Home() {
-  const ctx = useContext(StateContext)
-  const variant = {
+const variant = {
     normal:{
       opacity:0.3
     },
@@ -29,6 +27,10 @@ export default function Home() {
       opacity:1
     }
   }
+  
+export default function Home() {
+  const ctx = useContext(StateContext)
+  
   let animationType = "normal"
   if(ctx.preState==="faq"){
     animationType="faq"

@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { StateContext } from "../store/state-context";
 
-export default function Home() {
-  const ctx = useContext(StateContext);
-  const variant = {
+const variant = {
     normal: {
       opacity: 0.0,
     },
@@ -33,6 +31,10 @@ export default function Home() {
       opacity: 0.8,
     },
   };
+  
+export default function Home() {
+  const ctx = useContext(StateContext);
+  
   let imageType = "normal";
   if (ctx.preState == "aboutus") {
     imageType = "aboutusImg";

@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { StateContext } from "../store/state-context";
 
-export default function Home() {
-  const ctx = useContext(StateContext);
-  // variant for about title
-  const variants = {
+const variants = {
     normal: {
       opacity: 0,
     },
@@ -22,6 +19,10 @@ export default function Home() {
       opacity: 1,
     },
   };
+
+export default function Home() {
+  const ctx = useContext(StateContext);
+  // variant for about title
   return (
     <div>
       <Head>
