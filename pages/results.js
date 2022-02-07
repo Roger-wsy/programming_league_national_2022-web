@@ -5,42 +5,41 @@ import Layout from "../layouts/Layout";
 import { StateContext } from "../store/state-context";
 
 const variant = {
-    normal:{
-      opacity:0.3
-    },
-    aboutus:{
-      top:"calc(90vh - 97%)",
-      opacity:0.3,
-      left:"calc(58vw - 100%)",
-    },
-    faq:{
-      opacity:0.3,
-      left:"calc(58vw - 100%)",
-    },
-    overview:{
-      left:"calc(70vw - 60%)",
-      opacity:0.3
-    },
-    after:{
-      left:"auto",
-      top:"auto",
-      opacity:1
-    }
-  }
-  
+  normal: {
+    opacity: 0.3,
+  },
+  aboutus: {
+    top: "calc(90vh - 97%)",
+    opacity: 0.3,
+    left: "calc(58vw - 100%)",
+  },
+  faq: {
+    opacity: 0.3,
+    left: "calc(58vw - 100%)",
+  },
+  overview: {
+    left: "calc(70vw - 60%)",
+    opacity: 0.3,
+  },
+  after: {
+    left: "auto",
+    top: "auto",
+    opacity: 1,
+  },
+};
+
 export default function Home() {
-  const ctx = useContext(StateContext)
-  
-  let animationType = "normal"
-  if(ctx.preState==="faq"){
-    animationType="faq"
-  }else if(ctx.preState==="aboutus"){
-    animationType="aboutus"
+  const ctx = useContext(StateContext);
+
+  let animationType = "normal";
+  if (ctx.preState === "faq") {
+    animationType = "faq";
+  } else if (ctx.preState === "aboutus") {
+    animationType = "aboutus";
+  } else if (ctx.preState === "overview") {
+    animationType = "overview";
   }
-  else if(ctx.preState==="overview"){
-    animationType="overview"
-  }
-  console.log(animationType)
+  console.log(animationType);
   return (
     <div>
       <Head>
@@ -50,7 +49,14 @@ export default function Home() {
       </Head>
       <Layout bg="bg4">
         <div className="flex justify-center w-full h-[85vh]">
-          <motion.div variants={variant} animate="after" before="" transition={{duration:0.5}} initial={animationType} className="relative">
+          <motion.div
+            variants={variant}
+            animate="after"
+            before=""
+            transition={{ duration: 0.5 }}
+            initial={animationType}
+            className="relative"
+          >
             {/*  eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/image 3.png" alt="3" />
             <div className="relative my-10">

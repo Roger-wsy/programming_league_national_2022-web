@@ -5,36 +5,36 @@ import { useContext } from "react";
 import { StateContext } from "../store/state-context";
 
 const variant = {
-    normal: {
-      opacity: 0.0,
-    },
-    aboutus: {
-      top: "calc(100vh - 97%)",
-      left: "-100%",
-      opacity: 0.3,
-    },
-    faq: {
-      left: "-100%",
-      opacity: 0.3,
-    },
-    results: {
-      opacity: 0.3,
-      left: "calc(20vw - 100%)",
-    },
-    after: {
-      top: "auto",
-      left: "auto",
-      opacity: 1.0,
-    },
-    aboutusImg: {
-      left: "calc(73vw - 60%)",
-      opacity: 0.8,
-    },
-  };
-  
+  normal: {
+    opacity: 0.0,
+  },
+  aboutus: {
+    top: "calc(100vh - 97%)",
+    left: "-100%",
+    opacity: 0.3,
+  },
+  faq: {
+    left: "-100%",
+    opacity: 0.3,
+  },
+  results: {
+    opacity: 0.3,
+    left: "calc(20vw - 100%)",
+  },
+  after: {
+    top: "auto",
+    left: "auto",
+    opacity: 1.0,
+  },
+  aboutusImg: {
+    left: "calc(73vw - 60%)",
+    opacity: 0.8,
+  },
+};
+
 export default function Home() {
   const ctx = useContext(StateContext);
-  
+
   let imageType = "normal";
   if (ctx.preState == "aboutus") {
     imageType = "aboutusImg";
@@ -58,7 +58,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout bg="bg2_gif">
-        <div className="grid w-full h-full grid-cols-2 gap-4">
+        <div className="grid w-full h-full gap-4 lg:grid-cols-2">
           <motion.div
             className="relative flex items-center"
             variants={variant}
@@ -70,7 +70,7 @@ export default function Home() {
             <img
               src="/images/PLN-Glitch 1.gif"
               alt="logo"
-              className="object-contain w-full h-[600px]"
+              className="object-contain w-full hidden lg:block h-[600px]"
             />
           </motion.div>
           <motion.div
@@ -93,7 +93,7 @@ export default function Home() {
                 OVERVIEW
               </h1>
             </div>
-            <p className="mb-10 text-2xl font-medium tracking-widest text-justify h-80 md:text-3xl">
+            <p className="mb-10 font-medium tracking-widest text-justify h-80">
               Lorem, ipsum.
             </p>
           </motion.div>

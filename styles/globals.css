@@ -4,15 +4,19 @@
 
 @layer base {
   h1 {
-    @apply text-5xl font-bold lg:text-7xl;
+    @apply text-xl md:text-3xl lg:text-4xl font-bold xl:text-5xl 2xl:text-7xl;
   }
   h2 {
     @apply text-2xl font-bold md:text-3xl;
   }
   h3 {
-    @apply text-xl md:text-2xl;
+    @apply text-sm md:text-base lg:text-lg;
   }
   h4 {
+    @apply text-base md:text-lg;
+  }
+
+  p {
     @apply text-base md:text-lg;
   }
 
@@ -29,25 +33,6 @@
     font-weight: normal;
     src: local("No Surrender"),
       url("../fonts/No Surrender.ttf") format("truetype");
-  }
-
-  ::-webkit-scrollbar {
-    width: 15px;
-  }
-  ::-webkit-scrollbar-track {
-    background: linear-gradient(180deg, #00c2ff, #00ffc2);
-    border-radius: 16px;
-    /* width: 10px; */
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #00c2ff;
-    width: 15px;
-    border-radius: 20px;
-    border: 6px solid transparent;
-    background-clip: content-box;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #a1a1a1;
   }
 }
 
@@ -90,12 +75,11 @@ html {
 }
 
 .layout {
-  @apply flex flex-col items-start justify-center max-w-4xl px-4 py-8 mx-auto 2xl:max-w-[95rem];
+  @apply flex flex-col items-start justify-center max-w-3xl xl:max-w-4xl px-4 py-8 mx-auto 2xl:max-w-[78rem];
 }
 
 .side_layout {
-  display: grid;
-  grid-template-columns: 80px auto;
+  grid-template-columns: 90px auto;
 }
 
 .vertical {
@@ -205,4 +189,23 @@ html {
   background: -webkit-linear-gradient(#00c2ff, #00ffc2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 15px;
+}
+.scrollbar::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #00c2ff, #00ffc2);
+  border-radius: 16px;
+  /* width: 10px; */
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #00c2ff;
+  width: 15px;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
 }

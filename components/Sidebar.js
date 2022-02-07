@@ -5,25 +5,30 @@ import { useContext, useEffect } from "react";
 import { StateContext } from "../store/state-context";
 
 const Sidebar = () => {
-  const router = useRouter()
-  const ctx = useContext(StateContext)
+  const router = useRouter();
+  const ctx = useContext(StateContext);
 
   const changePreviousState = (state) => {
-    ctx.changePreState(state)
-  }
+    ctx.changePreState(state);
+  };
   const changeCurrentState = (state) => {
-    ctx.changeCurState(state)
-  }
-  const changeState = (state)=>{
-    changePreviousState(ctx.curState)
-    changeCurrentState(state)
-  }
+    ctx.changeCurState(state);
+  };
+  const changeState = (state) => {
+    changePreviousState(ctx.curState);
+    changeCurrentState(state);
+  };
   return (
     <div>
       <div className="bg-transparent fixed top-0 left-0 h-full flex items-center justify-between space-y-5 p-6 w-[90px] flex-col">
-        <div className="flex flex-col items-center" >
-          <Link href="/" >
-            <a className="block" onClick={()=>{changeState("")}}>
+        <div className="flex flex-col items-center">
+          <Link href="/">
+            <a
+              className="block"
+              onClick={() => {
+                changeState("");
+              }}
+            >
               <div className="mb-5">
                 <Image
                   src="/images/PLN-Glitch 1.png"
@@ -34,30 +39,71 @@ const Sidebar = () => {
               </div>
             </a>
           </Link>
-          <div className="space-y-10" >
-            <Link href="/about" >
-              <a className="block" onClick={()=>{changeState("aboutus")}} className={router.pathname == "/about" ? "active block" : " block"}>
-                <h3 className="rotate-180 cursor-pointer vertical strike">ABOUT US</h3>
+          <div className="space-y-10">
+            <Link href="/about">
+              <a
+                onClick={() => {
+                  changeState("aboutus");
+                }}
+                className={
+                  router.pathname == "/about" ? "active block" : " block"
+                }
+              >
+                <h3 className="rotate-180 cursor-pointer vertical strike">
+                  ABOUT US
+                </h3>
               </a>
             </Link>
-            <Link href="/overview" >
-              <a className="block" onClick={()=>{changeState("overview")}} className={router.pathname == "/overview" ? "active block" : "block"}>
-                <h3 className="rotate-180 cursor-pointer vertical strike" >OVERVIEW</h3>
+            <Link href="/overview">
+              <a
+                onClick={() => {
+                  changeState("overview");
+                }}
+                className={
+                  router.pathname == "/overview" ? "active block" : "block"
+                }
+              >
+                <h3 className="rotate-180 cursor-pointer vertical strike">
+                  OVERVIEW
+                </h3>
               </a>
             </Link>
-            <Link href="/faq" >
-              <a className="block" onClick={()=>{changeState("faq")}} className={router.pathname == "/faq" ? "active block" : "block"}>
-                <h3 className="rotate-180 cursor-pointer vertical strike" >FAQ</h3>
+            <Link href="/faq">
+              <a
+                onClick={() => {
+                  changeState("faq");
+                }}
+                className={router.pathname == "/faq" ? "active block" : "block"}
+              >
+                <h3 className="rotate-180 cursor-pointer vertical strike">
+                  FAQ
+                </h3>
               </a>
             </Link>
             <Link href="/results">
-              <a className="block"  onClick={()=>{changeState("results")}} className={router.pathname == "/results" ? "active block" : "block"}>
-                <h3 className="rotate-180 cursor-pointer vertical strike" >RESULTS</h3>
+              <a
+                onClick={() => {
+                  changeState("results");
+                }}
+                className={
+                  router.pathname == "/results" ? "active block" : "block"
+                }
+              >
+                <h3 className="rotate-180 cursor-pointer vertical strike">
+                  RESULTS
+                </h3>
               </a>
             </Link>
-            <Link href="/announcement" >
-              <a className="block" onClick={()=>{changeState("")}} className={router.pathname == "/announcement" ? "active block" : "block"}>
-                <h3 className="rotate-180 cursor-pointer vertical strike" >
+            <Link href="/announcement">
+              <a
+                onClick={() => {
+                  changeState("");
+                }}
+                className={
+                  router.pathname == "/announcement" ? "active block" : "block"
+                }
+              >
+                <h3 className="rotate-180 cursor-pointer vertical strike">
                   ANNOUNCEMENT
                 </h3>
               </a>
