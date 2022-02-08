@@ -131,6 +131,82 @@ export default function Home() {
           </motion.div>
         </div>
       </Layout>
+      <Layout bg="bg2_gradient">
+        <div className="grid w-full gap-4 lg:grid-cols-2">
+          <div>
+            <div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/image 3.png" alt="3" />
+              <div className="relative my-10">
+                <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
+                  ABOUT US
+                </h1>
+                <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
+                  ABOUT US
+                </h1>
+                <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#00C2FF]">
+                  ABOUT US
+                </h1>
+              </div>
+            </div>
+            <div>
+              <p className="mb-10 font-medium tracking-widest text-justify">
+                Programming League National is an annual competitive programming
+                contest organised by the Faculty of Computer Science and
+                Information Technology, University of Malaya where teams of 3
+                compete to solve algorithmic problems.
+              </p>
+              <p className="mb-10 font-medium tracking-widest text-justify">
+                For the past few years, it had been a university-wide
+                competition. In 2021, we are ramping it up by assembling
+                students from all universities across Malaysia to compete among
+                the best in the field!
+              </p>
+              <p className="mb-10 font-medium tracking-widest text-justify">
+                We aim to host the most colossal, eminent and pioneering
+                programming contest of all time and ultimately, uphold Malaysia
+                programming standards.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/PLN-Glitch 1.gif"
+              alt="logo"
+              className="object-contain w-full h-[400px] lg:h-[600px]"
+            />
+          </div>
+        </div>
+      </Layout>
+      <Layout bg="bg3_gradient">
+        <div className="w-full">
+          <div className="flex justify-center my-10">
+            <div className="relative">
+              {/*  eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="absolute -top-10"
+                src="/images/image 3.png"
+                alt="3"
+              />
+              <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
+                SPONSORS
+              </h1>
+              <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
+                SPONSORS
+              </h1>
+              <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
+                SPONSORS
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div className="min-h-[70vh]">
+          <p className="mb-10 font-medium tracking-widest text-justify">
+            Lorem, ipsum.
+          </p>
+        </div>
+      </Layout>
     </div>
   );
 }

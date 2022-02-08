@@ -4,7 +4,7 @@
 
 @layer base {
   h1 {
-    @apply text-xl md:text-3xl lg:text-4xl font-bold xl:text-5xl 2xl:text-7xl;
+    @apply text-xl font-bold md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-6xl;
   }
   h2 {
     @apply text-2xl font-bold md:text-3xl;
@@ -105,6 +105,14 @@ html {
   background-attachment: fixed;
 }
 
+.bg2_gradient {
+  background: linear-gradient(170deg, #000 30%, #5c1d5a);
+  /* background-color: black; */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg2_gif {
   background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
     url("../public/images/bg-2\ 1.gif");
@@ -117,6 +125,14 @@ html {
 .bg3 {
   background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
     url("../public/images/image\ 4.gif");
+  /* background-color: black; */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg3_gradient {
+  background: linear-gradient(200deg, #5c1d5a, #000 70%);
   /* background-color: black; */
   background-position: center center;
   background-size: cover;
@@ -181,8 +197,8 @@ html {
 
 .border_box {
   border: 50px solid transparent;
-  padding: 15px;
-  border-image: url(../public/images/border.png) 80 stretch;
+  padding: 10px;
+  border-image: url(../public/images/border.png) 85 stretch;
 }
 
 .gradient_text {
@@ -208,4 +224,12 @@ html {
 }
 .scrollbar::-webkit-scrollbar-thumb:hover {
   background-color: #a1a1a1;
+}
+
+.a_underline a {
+  text-decoration: underline;
+  text-decoration-color: #00ffc2;
+}
+.scale_left {
+  transform-origin: left;
 }

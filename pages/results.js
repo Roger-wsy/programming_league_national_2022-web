@@ -48,7 +48,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout bg="bg4">
-        <div className="flex justify-center w-full h-[85vh]">
+        <div className="flex justify-center w-full">
           <motion.div
             variants={variant}
             animate="after"
@@ -71,6 +71,14 @@ export default function Home() {
               </h1>
             </div>
           </motion.div>
+        </div>
+        <div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="h-[80vh]"
+            src="/images/output-onlinegiftools-2.gif"
+            alt="notfound"
+          />
         </div>
       </Layout>
     </div>

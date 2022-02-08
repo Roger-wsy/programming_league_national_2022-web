@@ -58,44 +58,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout bg="bg2_gif">
-        <div className="grid w-full h-full gap-4 lg:grid-cols-2">
-          <motion.div
-            className="relative flex items-center"
-            variants={variant}
-            initial={imageType}
-            animate="after"
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/PLN-Glitch 1.gif"
-              alt="logo"
-              className="object-contain w-full hidden lg:block h-[600px]"
-            />
-          </motion.div>
+        <div className="w-full h-full">
           <motion.div
             variants={variant}
             initial={animationType}
             animate="after"
             transition={{ duration: 0.5 }}
-            className="relative pt-10"
+            className="relative"
           >
-            {/*  eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/image 3.png" alt="3" />
-            <div className="relative my-10">
-              <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
-                OVERVIEW
-              </h1>
-              <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
-                OVERVIEW
-              </h1>
-              <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
-                OVERVIEW
-              </h1>
+            <div className="flex justify-center my-10">
+              <div className="relative">
+                {/*  eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="absolute -top-10"
+                  src="/images/image 3.png"
+                  alt="3"
+                />
+                <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
+                  OVERVIEW
+                </h1>
+                <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
+                  OVERVIEW
+                </h1>
+                <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
+                  OVERVIEW
+                </h1>
+              </div>
             </div>
-            <p className="mb-10 font-medium tracking-widest text-justify h-80">
-              Lorem, ipsum.
-            </p>
+            <div className="min-h-[70vh]">
+              <p className="mb-10 font-medium tracking-widest text-justify">
+                Lorem, ipsum.
+              </p>
+            </div>
           </motion.div>
         </div>
       </Layout>

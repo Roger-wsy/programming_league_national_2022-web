@@ -1,16 +1,21 @@
+import { useState } from "react";
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 import { motion } from "framer-motion";
+import { useContext } from "react/cjs/react.development";
+import { StateContext } from "../store/state-context";
+import announcement from "../data/announcement";
 
 const logo_variant = {
   hidden: {
     opacity: 0,
+    scale: 1.5,
   },
   show: {
     opacity: 1,
+    scale: 1,
   },
 };
-
 const local_variant = {
   hidden: {
     scale: 0.5,
@@ -25,7 +30,44 @@ const local_variant = {
   },
 };
 
-export default function Home() {
+const variant = {
+  normal: {
+    opacity: 0,
+  },
+  aboutus: {
+    top: "calc(100vh - 90vh)",
+    opacity: 0.3,
+  },
+  overview: {
+    left: "calc(100vw - 60%)",
+    opacity: 0.3,
+  },
+  results: {
+    left: "calc(70vw - 60%)",
+    opacity: 0.3,
+  },
+  after: {
+    y: 0,
+    top: "auto",
+    left: "auto",
+    opacity: 1,
+  },
+};
+
+export default function Home({ rules }) {
+  const [indexClick, setIndexClick] = useState(0);
+  const ctx = useContext(StateContext);
+
+  let animationType = "normal";
+  if (ctx.preState === "overview") {
+    animationType = "overview";
+  } else if (ctx.preState === "aboutus") {
+    animationType = "aboutus";
+  } else if (ctx.preState === "results") {
+    animationType = "results";
+  } else {
+    animationType = "normal";
+  }
   return (
     <div>
       <Head>
@@ -34,42 +76,55 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout bg="bg3">
-        <div className="relative pt-10">
+        <motion.div
+          className="relative"
+          initial={animationType}
+          variants={variant}
+          animate="after"
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           {/*  eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/image 3.png" alt="3" />
           <div className="relative my-10">
             <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
-              ANNOUNCEMENTS
+              ANNOUNCEMENT
             </h1>
             <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
-              ANNOUNCEMENTS
+              ANNOUNCEMENT
             </h1>
             <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
-              ANNOUNCEMENTS
+              ANNOUNCEMENT
             </h1>
           </div>
-        </div>
-        <div className="grid w-full gap-4 lg:grid-cols-2">
-          <div className="max-h-[65vh] lg:max-h-[75vh] space-y-10 overflow-y-scroll overflow-x-hidden scrollbar">
-            {Array(10)
-              .fill()
-              .map((_, i) => (
+        </motion.div>
+        <div className="grid w-full gap-10 lg:grid-cols-2">
+          <div
+            className={`max-h-[65vh] lg:min-h-[75vh] space-y-10 overflow-y-scroll overflow-x-hidden scrollbar`}
+          >
+            {announcement.map((a, i) => (
+              <div key={i}>
                 <motion.div
                   viewport={{ once: true }}
                   initial="hidden"
                   whileInView="show"
                   variants={local_variant}
-                  key={i}
-                  className="grid grid-cols-4 gap-10"
+                  className={`grid grid-cols-4 gap-10 cursor-pointer`}
+                  onClick={(_) => setIndexClick(i)}
                 >
-                  <div className="col-span-3">
+                  <div
+                    className={`col-span-3 ${
+                      indexClick !== i && "scale_left scale-75"
+                    }`}
+                  >
                     <div className="text-lg text-justify border_box">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Atque dicta quaerat repellat mollitia id culpa optio
-                      voluptatibus tenetur pariatur eum!
+                      {a.title}
                     </div>
                   </div>
-                  <div className="flex items-center justify-center">
+                  <div
+                    className={`flex pt-5 ${
+                      indexClick !== i && "scale_left scale-75"
+                    }`}
+                  >
                     <div className="relative">
                       <p className="p-4 text-xl border-b-4 border-t-4 border-[#00C2FF] tracking-wider gradient_text">
                         {i + 1 <= 9 ? `0${i + 1}` : i + 1}
@@ -78,28 +133,58 @@ export default function Home() {
                     </div>
                   </div>
                 </motion.div>
-              ))}
+                {/* mobile */}
+                {indexClick === i && (
+                  <div className="block p-5 mt-5 lg:hidden">
+                    <div className="border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl">
+                      <div className="flex justify-center border-b-4 border-[#00FFC2]">
+                        <h2 className="font-normal tracking-widest">
+                          ANNOUNCEMENT
+                        </h2>
+                      </div>
+                      <div className="flex items-center h-full p-5">
+                        <div>
+                          <h3
+                            className="whitespace-pre-wrap a_underline"
+                            dangerouslySetInnerHTML={{
+                              __html: announcement[indexClick].text,
+                            }}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-          <div className="hidden lg:block">
-            <motion.div
-              className="flex items-center h-full"
-              variants={logo_variant}
-              transition={{
-                duration: 1,
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/faq 2.gif"
-                alt="logo"
-                className="object-contain w-full max-h-[500px]"
-              />
-            </motion.div>
+          <div className="hidden lg:block border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl">
+            <div className="flex justify-center border-b-4 border-[#00FFC2]">
+              <h2 className="font-normal tracking-widest">ANNOUNCEMENT</h2>
+            </div>
+            <div className="flex items-center h-full p-5">
+              <div>
+                <div className="mb-5">
+                  <h3
+                    className="whitespace-pre-wrap a_underline"
+                    dangerouslySetInnerHTML={{
+                      __html: announcement[indexClick].text,
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>
     </div>
   );
 }
+
+export const getStaticProps = () => {
+  return {
+    props: {
+      announcement,
+    },
+  };
+};

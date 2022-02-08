@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout";
 import { motion } from "framer-motion";
 import { useContext } from "react/cjs/react.development";
 import { StateContext } from "../store/state-context";
-import faq from "../data/faq";
+import rules from "../data/rules";
 
 const logo_variant = {
   hidden: {
@@ -54,7 +54,7 @@ const variant = {
   },
 };
 
-export default function Home({ faq }) {
+export default function Home({ rules }) {
   const [indexClick, setIndexClick] = useState(0);
   const ctx = useContext(StateContext);
 
@@ -77,7 +77,7 @@ export default function Home({ faq }) {
       </Head>
       <Layout bg="bg3">
         <motion.div
-          className="relative pt-10"
+          className="relative"
           initial={animationType}
           variants={variant}
           animate="after"
@@ -87,13 +87,13 @@ export default function Home({ faq }) {
           <img src="/images/image 3.png" alt="3" />
           <div className="relative my-10">
             <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
-              FAQ
+              RULES & REGULATIONS
             </h1>
             <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
-              FAQ
+              RULES & REGULATIONS
             </h1>
             <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
-              FAQ
+              RULES & REGULATIONS
             </h1>
           </div>
         </motion.div>
@@ -101,7 +101,7 @@ export default function Home({ faq }) {
           <div
             className={`max-h-[65vh] lg:max-h-[75vh] space-y-10 overflow-y-scroll overflow-x-hidden scrollbar`}
           >
-            {faq.map((f, i) => (
+            {rules.map((r, i) => (
               <div key={i}>
                 <motion.div
                   viewport={{ once: true }}
@@ -117,7 +117,7 @@ export default function Home({ faq }) {
                     }`}
                   >
                     <div className="text-lg text-justify border_box">
-                      {f.question}
+                      {r.title}
                     </div>
                   </div>
                   <div
@@ -142,16 +142,12 @@ export default function Home({ faq }) {
                       </div>
                       <div className="flex items-center h-full p-5">
                         <div>
-                          {faq[indexClick].answer.map((a, i) => (
-                            <div key={a} className="mb-5">
-                              <h3
-                                className="whitespace-pre-wrap a_underline"
-                                dangerouslySetInnerHTML={{
-                                  __html: a,
-                                }}
-                              />
-                            </div>
-                          ))}
+                          <h3
+                            className="whitespace-pre-wrap a_underline"
+                            dangerouslySetInnerHTML={{
+                              __html: rules[indexClick].text,
+                            }}
+                          />
                         </div>
                       </div>
                     </div>
@@ -162,20 +158,18 @@ export default function Home({ faq }) {
           </div>
           <div className="hidden lg:block border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl">
             <div className="flex justify-center border-b-4 border-[#00FFC2]">
-              <h2 className="font-normal tracking-widest">ANSWER</h2>
+              <h2 className="font-normal tracking-widest">RULES</h2>
             </div>
             <div className="flex items-center h-full p-5">
               <div>
-                {faq[indexClick].answer.map((a, i) => (
-                  <div key={a} className="mb-5">
-                    <h3
-                      className="whitespace-pre-wrap a_underline"
-                      dangerouslySetInnerHTML={{
-                        __html: a,
-                      }}
-                    />
-                  </div>
-                ))}
+                <div className="mb-5">
+                  <h3
+                    className="whitespace-pre-wrap a_underline"
+                    dangerouslySetInnerHTML={{
+                      __html: rules[indexClick].text,
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -188,7 +182,7 @@ export default function Home({ faq }) {
 export const getStaticProps = () => {
   return {
     props: {
-      faq,
+      rules,
     },
   };
 };

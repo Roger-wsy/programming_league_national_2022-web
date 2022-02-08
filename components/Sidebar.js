@@ -40,20 +40,6 @@ const Sidebar = () => {
             </a>
           </Link>
           <div className="space-y-10">
-            <Link href="/about">
-              <a
-                onClick={() => {
-                  changeState("aboutus");
-                }}
-                className={
-                  router.pathname == "/about" ? "active block" : " block"
-                }
-              >
-                <h3 className="rotate-180 cursor-pointer vertical strike">
-                  ABOUT US
-                </h3>
-              </a>
-            </Link>
             <Link href="/overview">
               <a
                 onClick={() => {
@@ -105,6 +91,20 @@ const Sidebar = () => {
               >
                 <h3 className="rotate-180 cursor-pointer vertical strike">
                   ANNOUNCEMENT
+                </h3>
+              </a>
+            </Link>
+            <Link href="/rules">
+              <a
+                onClick={() => {
+                  changeState("");
+                }}
+                className={
+                  router.pathname == "/rules" ? "active block" : "block"
+                }
+              >
+                <h3 className="rotate-180 cursor-pointer vertical strike">
+                  RULES & REGULATIONS
                 </h3>
               </a>
             </Link>
