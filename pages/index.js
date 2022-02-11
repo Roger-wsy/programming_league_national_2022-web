@@ -132,79 +132,96 @@ export default function Home() {
         </div>
       </Layout>
       <Layout bg="bg2_gradient">
-        <div className="grid w-full gap-4 lg:grid-cols-2">
-          <div>
+        <div className="w-full h-[100vh] pt-80">
+          <div className="grid w-full gap-4 lg:grid-cols-2">
             <div>
+              <div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/image 3.png" alt="3" />
+                <div className="relative my-10">
+                  <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
+                    ABOUT US
+                  </h1>
+                  <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
+                    ABOUT US
+                  </h1>
+                  <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#00C2FF]">
+                    ABOUT US
+                  </h1>
+                </div>
+              </div>
+              <div>
+                <p className="mb-10 font-medium tracking-widest text-justify">
+                  Programming League National is an annual competitive
+                  programming contest organised by the Faculty of Computer
+                  Science and Information Technology, University of Malaya where
+                  teams of 3 compete to solve algorithmic problems.
+                </p>
+                <p className="mb-10 font-medium tracking-widest text-justify">
+                  For the past few years, it had been a university-wide
+                  competition. In 2021, we are ramping it up by assembling
+                  students from all universities across Malaysia to compete
+                  among the best in the field!
+                </p>
+                <p className="mb-10 font-medium tracking-widest text-justify">
+                  We aim to host the most colossal, eminent and pioneering
+                  programming contest of all time and ultimately, uphold
+                  Malaysia programming standards.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/image 3.png" alt="3" />
-              <div className="relative my-10">
-                <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
-                  ABOUT US
+              <img
+                src="/images/PLN-Glitch 1.gif"
+                alt="logo"
+                className="object-contain w-full h-[400px] lg:h-[600px]"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-[100vh] pt-52">
+          <div className="w-full">
+            <div className="flex justify-center mt-10 mb-32">
+              <div className="relative">
+                {/*  eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="absolute -top-10"
+                  src="/images/image 3.png"
+                  alt="3"
+                />
+                <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
+                  SPONSORS
                 </h1>
-                <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
-                  ABOUT US
+                <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
+                  SPONSORS
                 </h1>
-                <h1 className="2xl:text-6xl tracking-[0.4em] font-surrend text-[#00C2FF]">
-                  ABOUT US
+                <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
+                  SPONSORS
                 </h1>
               </div>
             </div>
-            <div>
-              <p className="mb-10 font-medium tracking-widest text-justify">
-                Programming League National is an annual competitive programming
-                contest organised by the Faculty of Computer Science and
-                Information Technology, University of Malaya where teams of 3
-                compete to solve algorithmic problems.
-              </p>
-              <p className="mb-10 font-medium tracking-widest text-justify">
-                For the past few years, it had been a university-wide
-                competition. In 2021, we are ramping it up by assembling
-                students from all universities across Malaysia to compete among
-                the best in the field!
-              </p>
-              <p className="mb-10 font-medium tracking-widest text-justify">
-                We aim to host the most colossal, eminent and pioneering
-                programming contest of all time and ultimately, uphold Malaysia
-                programming standards.
-              </p>
-            </div>
           </div>
-          <div className="flex items-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/PLN-Glitch 1.gif"
-              alt="logo"
-              className="object-contain w-full h-[400px] lg:h-[600px]"
-            />
+          <div className="min-h-[70vh] flex items-center flex-col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="72"
+              height="72"
+              viewBox="0 0 24 24"
+              // style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"
+            >
+              <path
+                fill="white"
+                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"
+              ></path>
+            </svg>
+            <h2 className="mt-10 font-medium tracking-widest text-justify">
+              Interested to be a sponsor?
+            </h2>
+            <h2 className="mb-10 font-medium tracking-widest text-justify">
+              sponsor@vhackusm.com
+            </h2>
           </div>
-        </div>
-      </Layout>
-      <Layout bg="bg3_gradient">
-        <div className="w-full">
-          <div className="flex justify-center my-10">
-            <div className="relative">
-              {/*  eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                className="absolute -top-10"
-                src="/images/image 3.png"
-                alt="3"
-              />
-              <h1 className="tracking-[0.4em] font-surrend text-[#FCEF41] z-10 absolute -top-[5px] -left-[5px]">
-                SPONSORS
-              </h1>
-              <h1 className="tracking-[0.4em] font-surrend text-[#FF00F5] absolute -top-[2px] -left-[2px]">
-                SPONSORS
-              </h1>
-              <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
-                SPONSORS
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className="min-h-[70vh]">
-          <p className="mb-10 font-medium tracking-widest text-justify">
-            Lorem, ipsum.
-          </p>
         </div>
       </Layout>
     </div>
