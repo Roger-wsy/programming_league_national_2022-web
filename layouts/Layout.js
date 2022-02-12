@@ -1,9 +1,11 @@
 import Image from "next/image";
+import MobileMenu from "../components/MobileMenu";
 import Sidebar from "../components/Sidebar";
 
 const Layout = ({ children, bg }) => {
   return (
     <div className="">
+      <MobileMenu />
       <div className="hidden lg:block">
         <Sidebar />
       </div>
