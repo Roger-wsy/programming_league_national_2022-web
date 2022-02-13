@@ -85,7 +85,7 @@ const faq = [
   },
   {
     question: "What are the computer and technical requirements?",
-    asnwer: [
+    answer: [
       "The team is free to use any programming languages permitted by the contest. All teams are expected to prepare their own computers for the online preliminary round. As for the final round, each team is obliged to use only one (1) computer provided by the organiser.",
     ],
   },

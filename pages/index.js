@@ -21,7 +21,7 @@ const aboutus_variant = {
     opacity:0.0
   },
   up:{
-    y:500,
+    y:300,
     opacity:0.0
   },
   after:{
@@ -190,7 +190,7 @@ export default function Home() {
                 </p>
               </motion.div>
             </div>
-            <motion.div variants={aboutus_variant} initial="logo" viewport={{ once: true }} whileInView="after" transition={{duration:1}} className="flex items-center relative">
+            <motion.div variants={aboutus_variant} initial="logo" viewport={{ once: true }} whileInView="after" transition={{duration:1}} className="items-center relative hidden sm:block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/PLN-Glitch 1.gif"

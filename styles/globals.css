@@ -148,6 +148,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg5 {
+  background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
+    url("../public/images/200.gif");
+  /* background-color: black; */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg6 {
+  background: linear-gradient(0deg, rgba(2, 12, 24, 0.7), rgba(1, 12, 24, 0.7)),
+    url("../public/images/bg3\ 1.png");
+  /* background-color: black; */
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #nprogress {
   pointer-events: none;
 }
