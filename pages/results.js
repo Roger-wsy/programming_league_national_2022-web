@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        <div>
+        <div className="flex justify-center w-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="h-[80vh]"

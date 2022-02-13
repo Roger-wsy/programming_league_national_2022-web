@@ -239,7 +239,7 @@ export default function Home() {
               Interested to be a sponsor?
             </h2>
             <h2 className="mb-10 font-medium tracking-widest text-justify">
-              sponsor@vhackusm.com
+              sponsorpln2122@gmail.com
             </h2>
           </motion.div>
         </div>
