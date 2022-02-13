@@ -150,10 +150,8 @@ export default function Home() {
             />
           </motion.div>
         </div>
-      </Layout>
-      <Layout bg="bg2_gradient">
         <div className="w-full h-[100vh] pt-80">
-          <div className="grid w-full gap-4 lg:grid-cols-2">
+          <div className="grid w-full gap-4 lg:grid-cols-2 p-10" style={{background: "rgba(55,65,81,0.7)",borderRadius:"20px"}}>
             <div>
               <motion.div className="relative" variants={aboutus_variant} initial="title" viewport={{ once: true }} whileInView="after" transition={{duration:1}}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -171,19 +169,19 @@ export default function Home() {
                 </div>
               </motion.div>
               <motion.div className="relative" variants={aboutus_variant} initial="title" viewport={{ once: true }} whileInView="after" transition={{duration:1}}>
-                <p className="mb-10 font-medium tracking-widest text-justify">
+                <p className="mb-10 font-medium tracking-widest text-justify sm:text-2xl text-lg">
                   Programming League National is an annual competitive
                   programming contest organised by the Faculty of Computer
                   Science and Information Technology, University of Malaya where
                   teams of 3 compete to solve algorithmic problems.
                 </p>
-                <p className="mb-10 font-medium tracking-widest text-justify">
+                <p className="mb-10 font-medium tracking-widest text-justify sm:text-2xl text-lg">
                   For the past few years, it had been a university-wide
                   competition. In 2021, we are ramping it up by assembling
                   students from all universities across Malaysia to compete
                   among the best in the field!
                 </p>
-                <p className="mb-10 font-medium tracking-widest text-justify">
+                <p className="mb-10 font-medium tracking-widest text-justify sm:text-2xl text-lg">
                   We aim to host the most colossal, eminent and pioneering
                   programming contest of all time and ultimately, uphold
                   Malaysia programming standards.
