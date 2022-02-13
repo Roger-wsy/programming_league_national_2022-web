@@ -86,7 +86,7 @@ export default function Home({ faq }) {
                 >
                   <div
                     className={`col-span-3 ${
-                      indexClick !== i && "scale_left scale-75"
+                      indexClick !== i && "scale_left scale-90"
                     }`}
                   >
                     <div className="text-justify border_box text-lg sm:text-2xl">
@@ -99,7 +99,7 @@ export default function Home({ faq }) {
                     }`}
                   >
                     <div className="relative">
-                      <p className="p-4 text-xl border-b-4 border-t-4 border-[#00C2FF] tracking-wider gradient_text">
+                      <p className="p-4 text-xl border-b-4 border-t-4 border-[#00C2FF] tracking-wider gradient_text sm:text-2xl">
                         {i + 1 <= 9 ? `0${i + 1}` : i + 1}
                       </p>
                       <div className="absolute -top-2 -right-0 w-5 h-1 bg-[#00C2FF]"></div>
