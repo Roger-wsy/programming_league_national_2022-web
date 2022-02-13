@@ -2,8 +2,6 @@
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 import { motion } from "framer-motion";
-import { useContext } from "react";
-import { StateContext } from "../store/state-context";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -14,48 +12,20 @@ const variant = {
   normal: {
     opacity: 0.0,
   },
-  aboutus: {
-    top: "calc(100vh - 97%)",
-    left: "-100%",
-    opacity: 0.3,
-  },
-  faq: {
-    left: "-100%",
-    opacity: 0.3,
-  },
-  results: {
-    opacity: 0.3,
-    left: "calc(20vw - 100%)",
+  down:{
+    y:-300,
+    opacity:0.0
   },
   after: {
     top: "auto",
     left: "auto",
     opacity: 1.0,
-  },
-  aboutusImg: {
-    left: "calc(73vw - 60%)",
-    opacity: 0.8,
+    y:0
   },
 };
 
 export default function Home() {
-  const ctx = useContext(StateContext);
-
-  let imageType = "normal";
-  if (ctx.preState == "aboutus") {
-    imageType = "aboutusImg";
-  }
-
   let animationType = "normal";
-  if (ctx.preState === "aboutus") {
-    animationType = "aboutus";
-  } else if (ctx.preState === "faq") {
-    animationType = "faq";
-  } else if (ctx.preState === "results") {
-    animationType = "results";
-  } else {
-    animationType = "normal";
-  }
 
   return (
     <div>
@@ -66,15 +36,13 @@ export default function Home() {
       </Head>
       <Layout bg="bg2_gif">
         <div className="w-full h-full">
-          <motion.div
-            variants={variant}
-            initial={animationType}
-            animate="after"
-            transition={{ duration: 0.5 }}
-            className="relative"
-          >
+          <div>
             <div className="flex justify-center my-10">
-              <div className="relative">
+              <motion.div className="relative" 
+                variants={variant}
+                initial="down"
+                animate="after"
+                transition={{ duration: 0.5 }}>
                 {/*  eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="absolute -top-10"
@@ -90,7 +58,7 @@ export default function Home() {
                 <h1 className="tracking-[0.4em] font-surrend text-[#00C2FF]">
                   OVERVIEW
                 </h1>
-              </div>
+              </motion.div>
             </div>
             <div className="min-h-[70vh] w-full">
               <VerticalTimeline>
@@ -144,7 +112,7 @@ export default function Home() {
                 </VerticalTimelineElement>
               </VerticalTimeline>
             </div>
-          </motion.div>
+          </div>
         </div>
       </Layout>
     </div>

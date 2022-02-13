@@ -2,20 +2,9 @@ import { useState } from "react";
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 import { motion } from "framer-motion";
-import { useContext } from "react/cjs/react.development";
-import { StateContext } from "../store/state-context";
 import announcement from "../data/announcement";
 
-const logo_variant = {
-  hidden: {
-    opacity: 0,
-    scale: 1.5,
-  },
-  show: {
-    opacity: 1,
-    scale: 1,
-  },
-};
+
 const local_variant = {
   hidden: {
     scale: 0.5,
@@ -34,20 +23,13 @@ const variant = {
   normal: {
     opacity: 0,
   },
-  aboutus: {
-    top: "calc(100vh - 90vh)",
-    opacity: 0.3,
-  },
-  overview: {
-    left: "calc(100vw - 60%)",
-    opacity: 0.3,
-  },
-  results: {
-    left: "calc(70vw - 60%)",
-    opacity: 0.3,
+  left:{
+    x:"100vw",
+    opacity:0.0
   },
   after: {
     y: 0,
+    x: 0,
     top: "auto",
     left: "auto",
     opacity: 1,
@@ -56,18 +38,7 @@ const variant = {
 
 export default function Home({ rules }) {
   const [indexClick, setIndexClick] = useState(0);
-  const ctx = useContext(StateContext);
 
-  let animationType = "normal";
-  if (ctx.preState === "overview") {
-    animationType = "overview";
-  } else if (ctx.preState === "aboutus") {
-    animationType = "aboutus";
-  } else if (ctx.preState === "results") {
-    animationType = "results";
-  } else {
-    animationType = "normal";
-  }
   return (
     <div>
       <Head>
@@ -78,10 +49,10 @@ export default function Home({ rules }) {
       <Layout bg="bg3">
         <motion.div
           className="relative"
-          initial={animationType}
+          initial="left"
           variants={variant}
           animate="after"
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           {/*  eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/image 3.png" alt="3" />
@@ -158,7 +129,7 @@ export default function Home({ rules }) {
               </div>
             ))}
           </div>
-          <div className="hidden lg:block border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl">
+          <motion.div className="hidden lg:block border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl" variants={variant} initial="normal" animate="after" transition={{duration:2}}>
             <div className="flex justify-center border-b-4 border-[#00FFC2]">
               <h2 className="font-normal tracking-widest">ANNOUNCEMENT</h2>
             </div>
@@ -174,7 +145,7 @@ export default function Home({ rules }) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </Layout>
     </div>

@@ -2,20 +2,9 @@ import { useState } from "react";
 import Head from "next/head";
 import Layout from "../layouts/Layout";
 import { motion } from "framer-motion";
-import { useContext } from "react/cjs/react.development";
-import { StateContext } from "../store/state-context";
+
 import rules from "../data/rules";
 
-const logo_variant = {
-  hidden: {
-    opacity: 0,
-    scale: 1.5,
-  },
-  show: {
-    opacity: 1,
-    scale: 1,
-  },
-};
 const local_variant = {
   hidden: {
     scale: 0.5,
@@ -34,17 +23,9 @@ const variant = {
   normal: {
     opacity: 0,
   },
-  aboutus: {
-    top: "calc(100vh - 90vh)",
-    opacity: 0.3,
-  },
-  overview: {
-    left: "calc(100vw - 60%)",
-    opacity: 0.3,
-  },
-  results: {
-    left: "calc(70vw - 60%)",
-    opacity: 0.3,
+  down:{
+    y:-300,
+    opacity:0.0
   },
   after: {
     y: 0,
@@ -56,18 +37,9 @@ const variant = {
 
 export default function Home({ rules }) {
   const [indexClick, setIndexClick] = useState(0);
-  const ctx = useContext(StateContext);
 
   let animationType = "normal";
-  if (ctx.preState === "overview") {
-    animationType = "overview";
-  } else if (ctx.preState === "aboutus") {
-    animationType = "aboutus";
-  } else if (ctx.preState === "results") {
-    animationType = "results";
-  } else {
-    animationType = "normal";
-  }
+ 
   return (
     <div>
       <Head>
@@ -78,7 +50,7 @@ export default function Home({ rules }) {
       <Layout bg="bg3">
         <motion.div
           className="relative"
-          initial={animationType}
+          initial="down"
           variants={variant}
           animate="after"
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -156,7 +128,7 @@ export default function Home({ rules }) {
               </div>
             ))}
           </div>
-          <div className="hidden lg:block border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl">
+          <motion.div className="hidden lg:block border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl" initial="normal" animate="after" variants={variant} transition={{duration:2}}>
             <div className="flex justify-center border-b-4 border-[#00FFC2]">
               <h2 className="font-normal tracking-widest">RULES</h2>
             </div>
@@ -172,7 +144,7 @@ export default function Home({ rules }) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </Layout>
     </div>

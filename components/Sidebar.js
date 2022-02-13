@@ -1,23 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useContext, useEffect } from "react";
-import { StateContext } from "../store/state-context";
 
 const Sidebar = () => {
   const router = useRouter();
-  const ctx = useContext(StateContext);
 
-  const changePreviousState = (state) => {
-    ctx.changePreState(state);
-  };
-  const changeCurrentState = (state) => {
-    ctx.changeCurState(state);
-  };
-  const changeState = (state) => {
-    changePreviousState(ctx.curState);
-    changeCurrentState(state);
-  };
   return (
     <div>
       <div className="bg-transparent fixed top-0 left-0 h-full flex items-center justify-between space-y-5 p-6 w-[90px] flex-col">
@@ -25,9 +12,6 @@ const Sidebar = () => {
           <Link href="/">
             <a
               className="block"
-              onClick={() => {
-                changeState("");
-              }}
             >
               <div className="mb-5">
                 <Image
@@ -42,9 +26,6 @@ const Sidebar = () => {
           <div className="space-y-10">
             <Link href="/overview">
               <a
-                onClick={() => {
-                  changeState("overview");
-                }}
                 className={
                   router.pathname == "/overview" ? "active block" : "block"
                 }
@@ -56,9 +37,6 @@ const Sidebar = () => {
             </Link>
             <Link href="/faq">
               <a
-                onClick={() => {
-                  changeState("faq");
-                }}
                 className={router.pathname == "/faq" ? "active block" : "block"}
               >
                 <h3 className="rotate-180 cursor-pointer vertical strike">
@@ -68,9 +46,6 @@ const Sidebar = () => {
             </Link>
             <Link href="/results">
               <a
-                onClick={() => {
-                  changeState("results");
-                }}
                 className={
                   router.pathname == "/results" ? "active block" : "block"
                 }
@@ -82,9 +57,6 @@ const Sidebar = () => {
             </Link>
             <Link href="/announcement">
               <a
-                onClick={() => {
-                  changeState("");
-                }}
                 className={
                   router.pathname == "/announcement" ? "active block" : "block"
                 }
@@ -96,9 +68,6 @@ const Sidebar = () => {
             </Link>
             <Link href="/rules">
               <a
-                onClick={() => {
-                  changeState("");
-                }}
                 className={
                   router.pathname == "/rules" ? "active block" : "block"
                 }

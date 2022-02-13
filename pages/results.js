@@ -1,25 +1,10 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
-import { useContext } from "react/cjs/react.development";
 import Layout from "../layouts/Layout";
-import { StateContext } from "../store/state-context";
 
 const variant = {
   normal: {
-    opacity: 0.3,
-  },
-  aboutus: {
-    top: "calc(90vh - 97%)",
-    opacity: 0.3,
-    left: "calc(58vw - 100%)",
-  },
-  faq: {
-    opacity: 0.3,
-    left: "calc(58vw - 100%)",
-  },
-  overview: {
-    left: "calc(70vw - 60%)",
-    opacity: 0.3,
+    opacity: 0,
   },
   after: {
     left: "auto",
@@ -29,17 +14,7 @@ const variant = {
 };
 
 export default function Home() {
-  const ctx = useContext(StateContext);
 
-  let animationType = "normal";
-  if (ctx.preState === "faq") {
-    animationType = "faq";
-  } else if (ctx.preState === "aboutus") {
-    animationType = "aboutus";
-  } else if (ctx.preState === "overview") {
-    animationType = "overview";
-  }
-  console.log(animationType);
   return (
     <div>
       <Head>
@@ -52,9 +27,8 @@ export default function Home() {
           <motion.div
             variants={variant}
             animate="after"
-            before=""
             transition={{ duration: 0.5 }}
-            initial={animationType}
+            initial="normal"
             className="relative"
           >
             {/*  eslint-disable-next-line @next/next/no-img-element */}
