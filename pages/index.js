@@ -40,7 +40,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout bg="bg1">
-        <div className="grid w-full gap-4 lg:grid-cols-2">
+        <div className="grid w-full gap-4 lg:grid-cols-2 h-screen justify-center items-center">
           <motion.div
             variants={variant}
             initial="before"
@@ -150,7 +150,7 @@ export default function Home() {
             />
           </motion.div>
         </div>
-        <div className="w-full h-[100vh] pt-80">
+        <div className="w-full pt-80">
           <div className="grid w-full gap-4 lg:grid-cols-2 p-10" style={{background: "rgba(55,65,81,0.7)",borderRadius:"20px"}}>
             <div>
               <motion.div className="relative" variants={aboutus_variant} initial="title" viewport={{ once: true }} whileInView="after" transition={{duration:1}}>
