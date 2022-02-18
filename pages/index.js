@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../layouts/Layout";
 
 const variant = {
@@ -12,24 +13,24 @@ const variant = {
 };
 
 const aboutus_variant = {
-  title:{
-    x:-100,
-    opacity:0.0
+  title: {
+    x: -100,
+    opacity: 0.0,
   },
-  logo:{
-    x:100,
-    opacity:0.0
+  logo: {
+    x: 100,
+    opacity: 0.0,
   },
-  up:{
-    y:300,
-    opacity:0.0
+  up: {
+    y: 300,
+    opacity: 0.0,
   },
-  after:{
-    opacity:1,
-    x:0,
-    y:0,
-  }
-}
+  after: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+  },
+};
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
         <link rel="icon" href="/images/PLN-Glitch 1.png" />
       </Head>
       <Layout bg="bg1">
-        <div className="grid w-full gap-4 lg:grid-cols-2 h-screen justify-center items-center">
+        <div className="grid items-center justify-center w-full h-screen gap-4 lg:grid-cols-2">
           <motion.div
             variants={variant}
             initial="before"
@@ -121,19 +122,23 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-end w-full">
-              <div className="relative">
-                <div className="absolute -top-[3px] left-0 bg-[#FCEF41] btn_1 z-10 px-11 py-2 cursor-pointer">
-                  <h3 className="font-bold text-black">REGISTER NOW!</h3>
+            <Link href="/register">
+              <a>
+                <div className="flex items-center justify-end w-full">
+                  <div className="relative">
+                    <div className="absolute -top-[3px] left-0 bg-[#FCEF41] btn_1 z-10 px-11 py-2 cursor-pointer">
+                      <h3 className="font-bold text-black">REGISTER NOW!</h3>
+                    </div>
+                    <div className="absolute -top-2 -left-1 bg-[#FF00F5] btn_1 px-11 py-2 cursor-pointer">
+                      <h3 className="font-bold text-black">REGISTER NOW!</h3>
+                    </div>
+                    <div className="bg-[#00C2FF] px-11 py-2 btn_1 cursor-pointer">
+                      <h3 className="font-bold text-black">REGISTER NOW!</h3>
+                    </div>
+                  </div>
                 </div>
-                <div className="absolute -top-2 -left-1 bg-[#FF00F5] btn_1 px-11 py-2 cursor-pointer">
-                  <h3 className="font-bold text-black">REGISTER NOW!</h3>
-                </div>
-                <div className="bg-[#00C2FF] px-11 py-2 btn_1 cursor-pointer">
-                  <h3 className="font-bold text-black">REGISTER NOW!</h3>
-                </div>
-              </div>
-            </div>
+              </a>
+            </Link>
           </motion.div>
           <motion.div
             className="flex items-center"
@@ -151,9 +156,19 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="w-full pt-80">
-          <div className="grid w-full gap-4 lg:grid-cols-2 p-10" style={{background: "rgba(55,65,81,0.7)",borderRadius:"20px"}}>
+          <div
+            className="grid w-full gap-4 p-10 lg:grid-cols-2"
+            style={{ background: "rgba(55,65,81,0.7)", borderRadius: "20px" }}
+          >
             <div>
-              <motion.div className="relative" variants={aboutus_variant} initial="title" viewport={{ once: true }} whileInView="after" transition={{duration:1}}>
+              <motion.div
+                className="relative"
+                variants={aboutus_variant}
+                initial="title"
+                viewport={{ once: true }}
+                whileInView="after"
+                transition={{ duration: 1 }}
+              >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/image 3.png" alt="3" />
                 <div className="relative my-10">
@@ -168,27 +183,41 @@ export default function Home() {
                   </h1>
                 </div>
               </motion.div>
-              <motion.div className="relative" variants={aboutus_variant} initial="title" viewport={{ once: true }} whileInView="after" transition={{duration:1}}>
-                <p className="mb-10 font-medium tracking-widest text-justify sm:text-2xl text-lg">
+              <motion.div
+                className="relative"
+                variants={aboutus_variant}
+                initial="title"
+                viewport={{ once: true }}
+                whileInView="after"
+                transition={{ duration: 1 }}
+              >
+                <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
                   Programming League National is an annual competitive
                   programming contest organised by the Faculty of Computer
                   Science and Information Technology, University of Malaya where
                   teams of 3 compete to solve algorithmic problems.
                 </p>
-                <p className="mb-10 font-medium tracking-widest text-justify sm:text-2xl text-lg">
+                <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
                   For the past few years, it had been a university-wide
                   competition. In 2021, we are ramping it up by assembling
                   students from all universities across Malaysia to compete
                   among the best in the field!
                 </p>
-                <p className="mb-10 font-medium tracking-widest text-justify sm:text-2xl text-lg">
+                <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
                   We aim to host the most colossal, eminent and pioneering
                   programming contest of all time and ultimately, uphold
                   Malaysia programming standards.
                 </p>
               </motion.div>
             </div>
-            <motion.div variants={aboutus_variant} initial="logo" viewport={{ once: true }} whileInView="after" transition={{duration:1}} className="items-center relative hidden sm:block">
+            <motion.div
+              variants={aboutus_variant}
+              initial="logo"
+              viewport={{ once: true }}
+              whileInView="after"
+              transition={{ duration: 1 }}
+              className="relative items-center hidden sm:block"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/PLN-Glitch 1.gif"
@@ -201,7 +230,14 @@ export default function Home() {
         <div className="w-full h-[100vh] pt-52">
           <div className="w-full">
             <div className="flex justify-center mt-10 mb-32">
-              <motion.div variants={aboutus_variant} initial="up" viewport={{ once: true }} whileInView="after" transition={{duration:1}} className="relative">
+              <motion.div
+                variants={aboutus_variant}
+                initial="up"
+                viewport={{ once: true }}
+                whileInView="after"
+                transition={{ duration: 1 }}
+                className="relative"
+              >
                 {/*  eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="absolute -top-10"
@@ -220,7 +256,14 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <motion.div variants={aboutus_variant} initial="up" viewport={{ once: true }} whileInView="after" transition={{duration:1}} className="min-h-[70vh] flex items-center flex-col relative">
+          <motion.div
+            variants={aboutus_variant}
+            initial="up"
+            viewport={{ once: true }}
+            whileInView="after"
+            transition={{ duration: 1 }}
+            className="min-h-[70vh] flex items-center flex-col relative"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="90"
