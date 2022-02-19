@@ -15,7 +15,7 @@ const faq = [
   {
     question: "When can I register?",
     answer: [
-      "The registration form will be open from 20th February 2022 (12:00 p.m.) until 18th March 2022 (11:59 p.m). Stay tuned on our social media accounts to get the latest updates.",
+      "The registration form will be open from 21th February 2022 (12:00 p.m.) until 18th March 2022 (11:59 p.m). Stay tuned on our social media accounts to get the latest updates.",
     ],
   },
   {
@@ -200,14 +200,14 @@ const faq = [
     question: "What are the prizes my team will get if we win?",
     answer: [
       `Open Category
-1st place: MYR 2000.00
-2nd place: MYR 1500.00
-3rd place: MYR 1000.00
+1st place: MYR 5000.00
+2nd place: MYR 3000.00
+3rd place: MYR 2000.00
 `,
       `Closed Category
-1st place: MYR 1200.00
+1st place: MYR 1000.00
 2nd place: MYR 800.00
-3rd place: MYR 400.00
+3rd place: MYR 500.00
 `,
     ],
   },

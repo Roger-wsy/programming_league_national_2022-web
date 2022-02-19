@@ -151,7 +151,7 @@ export default function Home() {
             <img
               src="/images/PLN-Glitch 1.gif"
               alt="logo"
-              className="object-contain w-full h-[300px] lg:h-[400px]"
+              className="object-contain w-full h-[300px] lg:h-[400px] px-8"
             />
           </motion.div>
         </div>
@@ -192,21 +192,18 @@ export default function Home() {
                 transition={{ duration: 1 }}
               >
                 <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
-                  Programming League National is an annual competitive
-                  programming contest organised by the Faculty of Computer
-                  Science and Information Technology, University of Malaya where
-                  teams of 3 compete to solve algorithmic problems.
+                  The Programming League is an annual nationwide competitive programming competition 
+                  held by the Computer Society of Universiti Malaya (PEKOM) starting from 2014 where 
+                  teams of 3 will compete to solve algorithmic problems in the given time.
                 </p>
                 <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
-                  For the past few years, it had been a university-wide
-                  competition. In 2021, we are ramping it up by assembling
-                  students from all universities across Malaysia to compete
-                  among the best in the field!
+                  This event invites all undergraduate students across Malaysia to tackle real-world 
+                  problems and challenge other teams in becoming the best among the field!
                 </p>
                 <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
-                  We aim to host the most colossal, eminent and pioneering
-                  programming contest of all time and ultimately, uphold
-                  Malaysia programming standards.
+                  As the committee members of Programming League National 2022, we aim to expose university 
+                  students to competitive programming and discover potential problem solvers to support the 
+                  industry’s growth as well as building a substantial technology ecosystem.
                 </p>
               </motion.div>
             </div>

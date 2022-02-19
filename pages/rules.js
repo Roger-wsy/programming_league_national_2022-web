@@ -106,7 +106,7 @@ export default function Home({ rules }) {
                 </motion.div>
                 {/* mobile */}
                 {indexClick === i && (
-                  <div className="block p-5 mt-5 lg:hidden">
+                  <div className="block p- mt-5 lg:hidden">
                     <div className="border-4 border-[#00FFC2] text-[#00FFC2] rounded-3xl">
                       <div className="flex justify-center border-b-4 border-[#00FFC2]">
                         <h2 className="font-normal tracking-widest">ANSWER</h2>
@@ -114,9 +114,15 @@ export default function Home({ rules }) {
                       <div className="flex items-center h-full p-5">
                         <div>
                           <h3
-                            className="whitespace-pre-wrap a_underline"
+                            className="whitespace-pre-wrap a_underline mb-5"
                             dangerouslySetInnerHTML={{
                               __html: rules[indexClick].text,
+                            }}
+                          />
+                          <h3
+                            className="whitespace-pre-wrap a_underline text-l"
+                            dangerouslySetInnerHTML={{
+                              __html: "**Organiser reserves the rights to amend all the rules and regulations and terms  without prior notice."
                             }}
                           />
                         </div>
@@ -138,6 +144,13 @@ export default function Home({ rules }) {
                     className="whitespace-pre-wrap a_underline text-2xl"
                     dangerouslySetInnerHTML={{
                       __html: rules[indexClick].text,
+                    }}
+                  />
+                  <br/>
+                  <h3
+                    className="whitespace-pre-wrap a_underline text-l"
+                    dangerouslySetInnerHTML={{
+                      __html: "**Organiser reserves the rights to amend all the rules and regulations and terms  without prior notice."
                     }}
                   />
                 </div>
