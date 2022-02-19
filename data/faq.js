@@ -193,7 +193,7 @@ const faq = [
   {
     question: "Will there be any workshops?",
     answer: [
-      "We are delighted to inform you that two (2) workshops will be held virtually by us to equip the participants with the essential fundamentals of competitive programming. Stay tuned to our social media accounts to get the latest updates on the workshops.",
+      "We are delighted to inform you that we will be having our Competitive Programming Workshop on 5 March. The workshop will be held virtually by us to equip the participants with the essential fundamentals of competitive programming. Stay tuned to our social media accounts to get latest uodate on the workshops.",
     ],
   },
   {
