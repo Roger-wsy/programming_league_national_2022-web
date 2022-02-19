@@ -92,7 +92,7 @@ const faq = [
   {
     question: "How many rounds are there in total?",
     answer: [
-      "Both open and closed categories will have two rounds – the preliminary and the final round. The top forty (40) teams from Open Category and top ten (10) teams from Closed Category of the preliminary round will proceed to the final round.",
+      "Top twenty-five(25) team from open and top eight(8) teams from closed cat.",
     ],
   },
   {
@@ -122,7 +122,7 @@ const faq = [
   {
     question: "Where will the preliminary round be held?",
     answer: [
-      "The preliminary round will be held online through Microsoft Teams. Contest participants are free to attempt the challenges from any geographical location within the time period of the online round.",
+      "The preliminary round will be held online through Codeforces. Contest participants are free to attempt the challenges from any geographical location within the time period of the online round.",
     ],
   },
   {
