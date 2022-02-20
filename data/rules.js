@@ -35,7 +35,7 @@ const rules = [
   },
   {
     title: "Final Round",
-    text: `1.	The final round is scheduled to be held on 2 April 2022 (Saturday) at the Faculty of Computer Science and Information Technology, Universiti Malaya.
+    text: `1.	The final round is scheduled to be held on 2nd April 2022 (Saturday) at the Faculty of Computer Science and Information Technology, Universiti Malaya.
 \n2.	All team members are required to attend on the contest day. No substitution of team members is allowed.
 \n3.	Only team member(s) who show up physically in the competition are eligible to compete in the final round. Team members are not allowed to communicate with their absent member(s) via any platforms.
 \n4.	Teams which are eligible for the final round will be notified via email by the organiser after the preliminary round.

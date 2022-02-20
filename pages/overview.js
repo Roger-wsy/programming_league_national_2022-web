@@ -71,7 +71,7 @@ export default function Home() {
                   contentArrowStyle={{
                     borderRight: "7px solid  #003366",
                   }}
-                  date="21 February 2022"
+                  date="21st February 2022"
                   iconStyle={{ background: "#003366", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
@@ -95,7 +95,7 @@ export default function Home() {
                   contentArrowStyle={{
                     borderRight: "7px solid  #003366",
                   }}
-                  date="5 March 2022 9.00 a.m. to 12.30 p.m."
+                  date="5th March 2022 9.00 a.m. to 12.30 p.m."
                   iconStyle={{ background: "#003366", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
@@ -112,7 +112,7 @@ export default function Home() {
                   contentArrowStyle={{
                     borderRight: "7px solid  #003366",
                   }}
-                  date="13 March 2022"
+                  date="13rd March 2022"
                   iconStyle={{ background: "#003366", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
@@ -129,7 +129,7 @@ export default function Home() {
                   contentArrowStyle={{
                     borderRight: "7px solid  #003366",
                   }}
-                  date="19 March 2022 8.30 a.m. to 12.30 p.m."
+                  date="19th March 2022 8.30 a.m. to 12.30 p.m."
                   iconStyle={{ background: "#003366", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
@@ -146,7 +146,7 @@ export default function Home() {
                   contentArrowStyle={{
                     borderRight: "7px solid  #003366",
                   }}
-                  date="2 April 2022 8.00 a.m. to 4.30 p.m."
+                  date="2nd April 2022 8.00 a.m. to 4.30 p.m."
                   iconStyle={{ background: "#003366", color: "#fff" }}
                   // icon={<WorkIcon />}
                 >
