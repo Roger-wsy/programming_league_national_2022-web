@@ -92,7 +92,7 @@ const faq = [
   {
     question: "How many rounds are there in total?",
     answer: [
-      "Top twenty-five(25) team from open and top eight(8) teams from closed cat.",
+      "Both open and closed categories will have two rounds - the preliminary and the final round. The top twenty-five(25) teams from Open Category and top eight(8) teams from Closed Category of the preliminary round will proceed to the final round.",
     ],
   },
   {
@@ -116,7 +116,7 @@ const faq = [
     question:
       "How can I confirm that my team is chosen for the preliminary round?",
     answer: [
-      "For the online preliminary round, any eligible team that has registered for the Programming League is eligible to join.",
+      "For the final round, only the top twenty-five(25) teams from Open Category and top eight(8) teams from Closed Category of the preliminary round will proceed to the final round.",
     ],
   },
   {
