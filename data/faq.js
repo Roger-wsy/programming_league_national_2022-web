@@ -2,7 +2,7 @@ const faq = [
   {
     question: "Who is allowed to participate?",
     answer: [
-      "●	For the Open Category, participation is open to undergraduate and postgraduate students from public and private universities in Malaysia.",
+      "●	For the Open Category, participation is open to undergraduate students from public and private universities in Malaysia.",
       "●	For the Closed Category, participation is open to first-year Universiti Malaya students only.",
     ],
   },
@@ -15,7 +15,7 @@ const faq = [
   {
     question: "When can I register?",
     answer: [
-      "The registration form will be open from 21th February 2022 (12:00 p.m.) until 18th March 2022 (11:59 p.m). Stay tuned on our social media accounts to get the latest updates.",
+      "The registration form will be open from 21th February 2022 (12:00 p.m.) until 13th March 2022 (11:59 p.m). Stay tuned on our social media accounts to get the latest updates.",
     ],
   },
   {
@@ -116,7 +116,7 @@ const faq = [
     question:
       "How can I confirm that my team is chosen for the preliminary round?",
     answer: [
-      "For the final round, only the top twenty-five(25) teams from Open Category and top eight(8) teams from Closed Category of the preliminary round will proceed to the final round.",
+      "For the online preliminary round, any eligible team that has registered for the Programming League is eligible to join.",
     ],
   },
   {
@@ -140,13 +140,13 @@ const faq = [
   {
     question: "How can I confirm that my team is chosen for the final round?",
     answer: [
-      "For the final round, only the top forty (40) teams from Open Category and top ten (10) teams from Closed Category of the preliminary round will proceed to the final round.",
+      "For the final round, only the top twenty-five(25) teams from Open Category and top eight(8) teams from Closed Category of the preliminary round will proceed to the final round.",
     ],
   },
   {
     question: "Where will the final round be held?",
     answer: [
-      "It will be held at the Faculty of Computer Science and Information Technology, Universiti Malaya",
+      "It will be held at the Faculty of Computer Science and Information Technology, Universiti Malaya. However, there might be change of venue if the pandemic still serious.",
     ],
   },
   {

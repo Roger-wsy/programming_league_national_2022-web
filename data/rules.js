@@ -53,12 +53,12 @@ const rules = [
 `,
   },
   {
-    title: "Open Category",
-    text: `Only the selected top twenty-five(25) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top-forty, teams with lower rankings will be offered the chance to advance to the final round.`,
+    title: "Final Round (Open Category)",
+    text: `Only the selected top twenty-five(25) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top twenty-five, teams with lower rankings will be offered the chance to advance to the final round.`,
   },
   {
     title: "Closed Category",
-    text: `Only the selected top eight(8) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top ten, teams with lower rankings will be offered the chance to advance to the final round.`,
+    text: `Only the selected top eight(8) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top eight, teams with lower rankings will be offered the chance to advance to the final round.`,
   },
   {
     title: "Registration Fee and Deposit",
@@ -67,7 +67,7 @@ const rules = [
   },
   {
     title: "Question Appeal and Clarification",
-    text: `1.	1.	Clarifications about the problems concerning a possible ambiguity or error may be obtained from the invigilators on duty during the contest. Answers will typically be restricted to Yes or No, the participants will be asked to read the problem statement again should there be no problem in the question. 
+    text: `1.	Clarifications about the problems concerning a possible ambiguity or error may be obtained from the invigilators on duty during the contest. Answers will typically be restricted to Yes or No, the participants will be asked to read the problem statement again should there be no problem in the question. 
 \n2.	If the judges agree that an ambiguity or error exists, a clarification will be issued to all participants.
 `,
   },
