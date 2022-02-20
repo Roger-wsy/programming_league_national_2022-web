@@ -43,7 +43,7 @@ const rules = [
 \n6.	This round will last for five (5) hours with a total of ten (10) questions to be tackled.
 \n7.	Use of CDs, mobile phones, Internet search, calculator or any devices is prohibited. 
 \n8.	Each team is obliged to use one computer and software tools/data/docs provided by the organiser.
-\n9.	Each team is permitted to prepare printed pages or program listing hardcopies of up to 25 A4 size pages.
+\n9.	Each team is permitted to prepare printed pages or program listing hardcopies of up to 25 pages of A4 size papers.
 \n10.	Teams must not communicate with the other team(s) during the contest. Interference with the contest leads to disqualification of the team(s) involved.
 \n11.	Participants are to be disqualified on attempt in any activity that jeopardises the contest such as dislodging extension cords, unauthorised modification of contest materials or any other activity that may knowingly or unknowingly impact other teams.
 \n12.	Participants cannot leave the contest room during the contest without permission from the committee. 
@@ -57,7 +57,7 @@ const rules = [
     text: `Only the selected top twenty-five(25) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top twenty-five, teams with lower rankings will be offered the chance to advance to the final round.`,
   },
   {
-    title: "Closed Category",
+    title: "Final Round (Closed Category)",
     text: `Only the selected top eight(8) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top eight, teams with lower rankings will be offered the chance to advance to the final round.`,
   },
   {
@@ -107,7 +107,7 @@ const rules = [
   {
     title: "Terms and Condiitons",
     text: `1.	You cannot participate in the contest and you (and, if applicable, your team members) will be immediately disqualified and forfeit all of your prizes if:
-\n●	You are not a student of any Malaysian tertiary institution;
+\n●	You are not an undergraduate student of any Malaysian tertiary institution;
 \n●	You are a committee or volunteer of the contest;
 \n●	You are a question setter of the contest;
 \n●	Your team has less than or more than three (3) members.

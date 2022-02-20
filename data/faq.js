@@ -15,7 +15,7 @@ const faq = [
   {
     question: "When can I register?",
     answer: [
-      "The registration form will be open from 21th February 2022 (12:00 p.m.) until 13th March 2022 (11:59 p.m). Stay tuned on our social media accounts to get the latest updates.",
+      "The registration form will be open from 21st February 2022 (12:00 p.m.) until 13th March 2022 (11:59 p.m). Stay tuned on our social media accounts to get the latest updates.",
     ],
   },
   {
@@ -193,7 +193,7 @@ const faq = [
   {
     question: "Will there be any workshops?",
     answer: [
-      "We are delighted to inform you that we will be having our Competitive Programming Workshop on 5 March. The workshop will be held virtually by us to equip the participants with the essential fundamentals of competitive programming. Stay tuned to our social media accounts to get latest uodate on the workshops.",
+      "We are delighted to inform you that we will be having our Competitive Programming Workshop on 5th March 2022. The workshop will be held virtually by us to equip the participants with the essential fundamentals of competitive programming. Stay tuned to our social media accounts to get latest uodate on the workshops.",
     ],
   },
   {
