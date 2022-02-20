@@ -65,12 +65,20 @@ export default function Home() {
             <div className="min-h-[60vh] w-full flex flex-col justify-around">
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
                 <h1 className="font-surrend text-[#00FFC2] tracking-widest">
-                  WORKSHOP
+                  <a
+                    href="https://forms.gle/AdiqrQm4JQ2tyyBu8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >WORKSHOP</a>
                 </h1>
               </div>
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
                 <h1 className="font-surrend text-[#00FFC2] tracking-widest">
-                  COMPETITION
+                  <a
+                    href="https://forms.gle/gtyAZryxqRfeTRkP6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >COMPETITION</a>
                 </h1>
               </div>
             </div>
