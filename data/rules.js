@@ -12,24 +12,24 @@ const rules = [
   },
   {
     title: "Registration",
-    text: `1.	Registration for the Programming League National 2022 will open on 21 February 2022 and will end on or around 13 March 2022 (dates are subject to change).
+    text: `1.	Registration for the Programming League National 2022 will open on 21st February 2022 and will end on or around 13rd March 2022 (dates are subject to change).
 \n2.	Participants will be notified via email within 14 days after the registration for confirmation of registration once the registration has been approved by the organiser. 
 `,
   },
   {
     title: "Contest Structure",
-    text: `1.	Programming League National 2022 consists of two (2) rounds: the online preliminary round and the final round. The preliminary round will be conducted on Codeforces. The final round will take place physically at the Faculty of Computer Science and Information Technology (FCSIT), Universiti Malaya.
+    text: `Programming League National 2022 consists of two (2) rounds: the online preliminary round and the final round. The preliminary round will be conducted on Codeforces. The final round will take place physically at the Faculty of Computer Science and Information Technology (FCSIT), Universiti Malaya.
 `,
   },
   {
     title: "Preliminary Round (Online)",
-    text: `1.	The preliminary round (online) is scheduled to be held on 19 March 2022 (Saturday) via Codeforces. In the case of any emergency issues on Codeforces, we would shift the contest to HackerRank. The exact timing will be announced.
+    text: `1.	The preliminary round (online) is scheduled to be held on 19th March 2022 (Saturday) via Codeforces. In the case of any emergency issues on Codeforces, we would shift the contest to HackerRank. The exact timing will be announced.
 \n2.	Any registered teams that are notified are eligible to participate in this round.
 \n3.	This round will last for two (2) hours with a total of five (5) questions to be tackled.
 \n4.	Teams are required to join the contest held on Codeforces with the username and team name registered during registration.
 \n5.	Results and rankings for usernames/team names that are not registered under any teams will not be taken into account. 
 \n6.	Participants are free to attempt the challenges with their own computers from any geographical location within the given period (GMT +8:00 hours) or Malaysia time.
-\n7.	Results of this round will be announced on our official website and social media accounts on 20 March 2022. Shortlisted teams to the final round will receive a confirmation email latest by 3 days after the preliminary round.
+\n7.	Results of this round will be announced on our official website and social media accounts on 20th March 2022. Shortlisted teams to the final round will receive a confirmation email latest by 3 days after the preliminary round.
 \n8.	The decisions of the judges are final.
 `,
   },
@@ -73,7 +73,7 @@ const rules = [
   },
   {
     title: "Computing Environment",
-    text: `1.	1.	Languages permitted during the contest are Java, Javascript, Python and C/C++. 
+    text: `1.	Languages permitted during the contest are Java, Javascript, Python and C/C++. 
 \n2.	Problems vary in difficulty and appear in random order in the problem set. 
 \n3.	Solutions are to be submitted through the mechanism or system provided. 
 \n4.	Each submission is judged upon submission during the contest as accepted or rejected; the latter will be explained a little bit with no further details; e.g.:
@@ -107,7 +107,7 @@ const rules = [
   {
     title: "Terms and Condiitons",
     text: `1.	You cannot participate in the contest and you (and, if applicable, your team members) will be immediately disqualified and forfeit all of your prizes if:
-\n●	You are not an undergraduate student of any Malaysian tertiary institution;
+\n●	You are not an undergraduate student of any Malaysia tertiary institution;
 \n●	You are a committee or volunteer of the contest;
 \n●	You are a question setter of the contest;
 \n●	Your team has less than or more than three (3) members.
