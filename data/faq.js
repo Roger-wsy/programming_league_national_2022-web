@@ -146,7 +146,7 @@ const faq = [
   {
     question: "Where will the final round be held?",
     answer: [
-      "It will be held at the Faculty of Computer Science and Information Technology, Universiti Malaya. However, there might be change of venue if the pandemic still serious.",
+      "It will be held at the Faculty of Computer Science and Information Technology, Universiti Malaya. However, if the pandemic situation is serious, we might switch the event mode to online.",
     ],
   },
   {
@@ -159,6 +159,12 @@ const faq = [
     question: "Are travel and accommodation fees covered?",
     answer: [
       "Travel and accommodation fees will not be provided for the participants. However, you may contact us regarding accommodation booking at UM.",
+    ],
+  },
+  {
+    question: "If my team is unable to be present physically in the final round, is there any other possible arrangement?",
+    answer: [
+      "We are sorry to inform you that this action will be counted as withdrawal from the competition and teams with lower ranking will be offered the chance to the final round. The purpose of having a physical final round is to ensure the fairness of the competition.",
     ],
   },
   {
