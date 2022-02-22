@@ -58,17 +58,17 @@ const faq = [
   {
     question: "What programming languages can we use?",
     answer: [
-      "Programming languages permitted during the contest are Java, Kotlin, Python and C/C++. ",
+      "Programming languages permitted during the contest are Java, Javascript, Python and C/C++.",
     ],
   },
   {
     question: "What programming tools can we use?",
     answer: [
       `IDEs configured for the contest are as follows:
-●	IntelliJ (IDEA Community Edition version 2019.2.2) with Open JDK11.4
-●	Kotlin plugin 1.3.41-release-IJ2019.2
-●	Pycharm Community Edition Python IDE (version 2019.2.2) with CPython 3.6.8
-●	Code::Blocks (version 17.12-1) with C/C++ (gcc7.4.0, g++7.4.0)
+●	IntelliJ (IDEA Community Edition version 2021.3.2) with Open JDK11.4
+●	Visual Studio Code(Version 1.64) with JavaScript V8 4.8.0
+●	Pycharm Community Edition Python IDE (version 2021.3.2) with CPython 3.10.0
+●	Code::Blocks (version 20.03) with C++17 (GCC 9.2)
 `,
     ],
   },
@@ -78,8 +78,8 @@ const faq = [
       `Yes, the offline documentations available during the final round competition are:
 ●	JDK JavaDocs
 ●	C++ STL docs
-●	Python 3.6 documentation
-●	DOMJudge team manual
+●	Python 3.10 documentation
+●	JavaScript devdocs
 `,
     ],
   },
