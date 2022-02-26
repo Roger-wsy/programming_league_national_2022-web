@@ -58,7 +58,24 @@ const faq = [
   {
     question: "What programming languages can we use?",
     answer: [
-      "Programming languages permitted during the contest are Java, Javascript, Python and C/C++.",
+      `The following language are only available languages for the problems from the contest:
+●	GNU GCC C11 5.1.0
+●	Clang++17 Diagnostics
+●	GNU G++14 6.4.0
+●	GNU G++17 7.3.0
+●	GNU G++20 11.2.0 (64 bit, winilibs)
+●	Microsoft Visual C++ 2017
+●	GNU G++17 9.2.0 (64 bit, msys2)
+●	Java 11.0.6
+●	Java 1.8.0_241
+●	Python 2.7.18
+●	Python 3.8.10
+●	PyPy 2.7 (7.3.0)
+●	PyPy 3.7 (7.3.0)
+●	PyPy 3.7 (7.3.5, 64 bit)
+●	Javascript V8 4.8.0
+●	Node.js 12.16.3
+`,  
     ],
   },
   {
@@ -67,7 +84,7 @@ const faq = [
       `IDEs configured for the contest are as follows:
 ●	IntelliJ (IDEA Community Edition version 2021.3.2) with Open JDK11.4
 ●	Visual Studio Code(Version 1.64) with JavaScript V8 4.8.0
-●	Pycharm Community Edition Python IDE (version 2021.3.2) with CPython 3.10.0
+●	Pycharm Community Edition Python IDE (version 2021.3.2) with CPython 3.8.10
 ●	Code::Blocks (version 20.03) with C++17 (GCC 9.2)
 `,
     ],
@@ -78,7 +95,7 @@ const faq = [
       `Yes, the offline documentations available during the final round competition are:
 ●	JDK JavaDocs
 ●	C++ STL docs
-●	Python 3.10 documentation
+●	Python 3.8.10 documentation
 ●	JavaScript devdocs
 `,
     ],
