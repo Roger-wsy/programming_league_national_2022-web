@@ -40,7 +40,6 @@ export default function Home() {
         <meta name="description" content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
         <link rel="canonical" href="https://www.programming-league.com"/>
-        <meta property="og:locale" content="en_US"/>
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Programming League National 2022"/>
         <meta property="og:description" content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!"/>
