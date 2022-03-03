@@ -46,7 +46,7 @@ export default function Home() {
         <meta property="og:description" content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!"/>
         <meta property="og:url" content="https://www.programming-league.com"/>
         <meta property="og:site_name" content="Programming League"/>
-        <meta property="og:image" content="https://www.programming-league.com/images/PLN-Glitch 1.png"/>
+        <meta property="og:image" content="https://www.programming-league.com/images/General Backdrop.png"/>
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="628"/>
         <meta property="fb:app_id" content="2807450235954335"/>
