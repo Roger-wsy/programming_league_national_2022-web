@@ -64,12 +64,12 @@ export default function Home() {
             </div>
             <div className="min-h-[60vh] w-full flex flex-col justify-around">
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
-                <h1 className="font-surrend text-[#00FFC2] tracking-widest">
+                <h1 className="font-surrend text-[#00FFC2] tracking-widest text-center">
                   <a
-                    href="https://forms.gle/AdiqrQm4JQ2tyyBu8"
+                    href="https://forms.gle/YAMC6hKEP9es3bTp6"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >WORKSHOP</a>
+                  >CAREER TALK & COMPETITION BRIEFING</a>
                 </h1>
               </div>
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
