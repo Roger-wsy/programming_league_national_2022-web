@@ -106,6 +106,23 @@ export default function Home() {
                 <VerticalTimelineElement
                   className="vertical-timeline-element--work"
                   contentStyle={{
+                    background: "#660002",
+                    color: "#fff",
+                  }}
+                  contentArrowStyle={{
+                    borderRight: "7px solid  #003366",
+                  }}
+                  date="12th March 2022 9.00 a.m. to 12.00 p.m."
+                  iconStyle={{ background: "#660002", color: "#fff" }}
+                  // icon={<WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title md:text-2xl text-xl">
+                    Career Talk & Competition Briefing
+                  </h3>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  contentStyle={{
                     background: "#003366",
                     color: "#fff",
                   }}
