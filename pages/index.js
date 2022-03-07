@@ -236,9 +236,9 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-        <div className="w-full h-[100vh] pt-52">
+        <div className="w-full min-h-[100vh] pt-52">
           <div className="w-full">
-            <div className="flex justify-center mt-10 mb-32">
+            <div className="flex justify-center mt-10 mb-16">
               <motion.div
                 variants={aboutus_variant}
                 initial="up"
@@ -271,9 +271,82 @@ export default function Home() {
             viewport={{ once: true }}
             whileInView="after"
             transition={{ duration: 1 }}
-            className="min-h-[70vh] flex items-center flex-col relative"
-          >
-            <svg
+            className="flex items-center flex-col relative p-4 rounded-[20px]">
+
+            <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">Diamond Sponsors</h2>
+            <div className="w-full  flex items-center justify-center">
+              <a
+                href="https://www.moneylion.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/moneylion.png"
+                  alt="Money Lion Logo"
+                  className="object-contain w-[250px] lg:w-[500px] h-[100px] lg:h-[80px] cursor-pointer"
+                />
+              </a>
+              <a
+                href="https://www.maxis.com.my/en/home/ "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/maxis.png"
+                  alt="Maxis Logo"
+                  className="object-contain w-[250px] lg:w-[500px] h-[100px] lg:h-[180px] cursor-pointer"
+                />
+              </a>
+            </div>
+            <h2 className="color-[#FFFFFF] font-normal font-agency mt-6">Platinum Sponsors</h2>
+            <div className="w-full flex items-center justify-around">
+              <a 
+                href="https://www.fusionexgroup.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/fusionex.png"
+                  alt="MRANTI Logo"
+                  className="object-contain w-[80px] lg:w-[150px] h-[100px] cursor-pointer"
+                />
+              </a>
+              <a 
+                href="https://www.nintex.com/ "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/nintex.png"
+                  alt="MRANTI Logo"
+                  className="object-contain w-[80px] lg:w-[150px] h-[100px] cursor-pointer"
+                />
+              </a>
+              <a 
+                href="http://mranti.my/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/mranti.png"
+                  alt="MRANTI Logo"
+                  className="object-contain w-[80px] lg:w-[150px] h-[100px] cursor-pointer"
+                />
+              </a>
+            </div>
+            <h2 className="color-[#FFFFFF] font-normal font-agency mt-8">Benefits-in-kind Sponsors</h2>
+            <a                 
+              href="https://go.thecads.com/rubiqe_UM "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/cads.png"
+                alt="CADS Logo"
+                className="object-contain w-[70px] lg:w-[120px] h-[80px] cursor-pointer"
+              />
+            </a>
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="90"
               viewBox="0 0 24 24"
@@ -289,7 +362,7 @@ export default function Home() {
             </h2>
             <h2 className="mb-10 font-medium tracking-widest text-justify">
               sponsorpln2122@gmail.com
-            </h2>
+            </h2> */}
           </motion.div>
         </div>
       </Layout>
