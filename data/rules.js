@@ -34,31 +34,36 @@ const rules = [
 `,
   },
   {
-    title: "Final Round",
-    text: `1.	The final round is scheduled to be held on 2nd April 2022 (Saturday) at the Faculty of Computer Science and Information Technology, Universiti Malaya.
-\n2.	All team members are required to attend on the contest day. No substitution of team members is allowed.
-\n3.	Only team member(s) who show up physically in the competition are eligible to compete in the final round. Team members are not allowed to communicate with their absent member(s) via any platforms.
-\n4.	Teams which are eligible for the final round will be notified via email by the organiser after the preliminary round.
-\n5.	Teams which are eligible for the final round must RSVP the invitation email to the physical site for the final round of PLN2022 within the time given by the organiser to avoid the disqualification of your team to the final round.
-\n6.	This round will last for five (5) hours with a total of ten (10) questions to be tackled.
-\n7.	Use of CDs, mobile phones, Internet search, calculator or any devices is prohibited. 
-\n8.	Each team is obliged to use one computer and software tools/data/docs provided by the organiser.
-\n9.	Each team is permitted to prepare printed pages or program listing hardcopies of up to 25 pages of A4 size papers.
-\n10.	Teams must not communicate with the other team(s) during the contest. Interference with the contest leads to disqualification of the team(s) involved.
-\n11.	Participants are to be disqualified on attempt in any activity that jeopardises the contest such as dislodging extension cords, unauthorised modification of contest materials or any other activity that may knowingly or unknowingly impact other teams.
-\n12.	Participants cannot leave the contest room during the contest without permission from the committee. 
-\n13.	No travel and accommodation fees will be covered by the organiser.
-\n14.	The decisions of the judges are final.
-\n15.	Note that there might be a change of event mode based on the pandemic situation. 
+    title: "Final Round (Open Category)",
+    text: `1. Only the selected top twenty-five(25) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top twenty-five, teams with lower rankings will be offered the chance to advance to the final roun
+\n2.	The final round is scheduled to be held on 2nd April 2022 (Saturday) at the Faculty of Computer Science and Information Technology, Universiti Malaya.
+\n3.	All team members are required to attend on the contest day. No substitution of team members is allowed.
+\n4.	Only team member(s) who show up physically in the competition are eligible to compete in the final round. Team members are not allowed to communicate with their absent member(s) via any platforms.
+\n5.	Teams which are eligible for the final round will be notified via email by the organiser after the preliminary round.
+\n6.	Teams which are eligible for the final round must RSVP the invitation email to the physical site for the final round of PLN2022 within the time given by the organiser to avoid the disqualification of your team to the final round.
+\n7.	This round will last for five (5) hours with a total of ten (10) questions to be tackled.
+\n8.	Use of CDs, mobile phones, Internet search, calculator or any devices is prohibited. 
+\n9.	Each team is obliged to use one computer and software tools/data/docs provided by the organiser.
+\n10.	Each team is permitted to prepare printed pages or program listing hardcopies of up to 25 pages of A4 size papers.
+\n11.	Teams must not communicate with the other team(s) during the contest. Interference with the contest leads to disqualification of the team(s) involved.
+\n12.	Participants are to be disqualified on attempt in any activity that jeopardises the contest such as dislodging extension cords, unauthorised modification of contest materials or any other activity that may knowingly or unknowingly impact other teams.
+\n13.	Participants cannot leave the contest room during the contest without permission from the committee. 
+\n14.	No travel and accommodation fees will be covered by the organiser.
+\n15.	The decisions of the judges are final.
+\n16.	Note that there might be a change of event mode based on the pandemic situation. 
 `,
   },
   {
-    title: "Final Round (Open Category)",
-    text: `Only the selected top twenty-five(25) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top twenty-five, teams with lower rankings will be offered the chance to advance to the final round.`,
-  },
-  {
     title: "Final Round (Closed Category)",
-    text: `Only the selected top eight(8) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top eight, teams with lower rankings will be offered the chance to advance to the final round.`,
+    text: `1. Only the selected top eight(8) teams from the preliminary round will make it to this round. Should there be any withdrawal of teams from the top eight, teams with lower rankings will be offered the chance to advance to the final round.
+\n2.  The final round (closed category) is scheduled to be held online on 2nd April 2022 (Saturday) via Codeforces. In the case of any emergency issues on Codeforces, we would shift the contest to HackerRank. The exact timing will be announced.
+\n3.  This round will last for five(5) hours with a total of ten(10) questions to be tackled.  
+\n4.  Teams are required to join the contest held on Codeforces with the username and team name registered during registration.
+\n5.  Results and rankings for usernames/team names that are not registered under any teams will not be taken into account. 
+\n6. Participants are free to attempt the challenges with their own computers from any geographical location within the given period (GMT +8:00 hours) or Malaysia time.
+\n7. The prize giving session will be held on Microsoft Teams (the same link with contest briefing) after the competition. The final result will also be posted on our social media site.
+\n8. The decisions of the judges are final.  
+`,
   },
   {
     title: "Registration Fee and Deposit",

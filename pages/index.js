@@ -273,7 +273,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="flex items-center flex-col relative p-4 rounded-[20px]">
 
-            <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">Diamond Sponsors</h2>
+            {/* <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">Diamond Sponsors</h2>
             <div className="w-full  flex items-center justify-center">
               <a
                 href="https://www.moneylion.com/"
@@ -283,22 +283,23 @@ export default function Home() {
                 <img
                   src="/images/moneylion.png"
                   alt="Money Lion Logo"
-                  className="object-contain w-[250px] lg:w-[500px] h-[100px] lg:h-[80px] cursor-pointer"
+                  className="object-contain w-[250px] lg:w-[700px] h-[100px] lg:h-[150px] cursor-pointer bg-yell"
                 />
               </a>
               <a
                 href="https://www.maxis.com.my/en/home/ "
                 target="_blank"
                 rel="noopener noreferrer"
+                className="ml-6"
               >
                 <img
                   src="/images/maxis.png"
                   alt="Maxis Logo"
-                  className="object-contain w-[250px] lg:w-[500px] h-[100px] lg:h-[180px] cursor-pointer"
+                  className="object-contain w-[230px] lg:w-[600px] h-[100px] lg:h-[150px] cursor-pointer"
                 />
               </a>
             </div>
-            <h2 className="color-[#FFFFFF] font-normal font-agency mt-6">Platinum Sponsors</h2>
+            <h2 className="color-[#FFFFFF] font-normal font-agency mt-6 lg:mb-6">Platinum Sponsors</h2>
             <div className="w-full flex items-center justify-around">
               <a 
                 href="https://www.fusionexgroup.com/"
@@ -308,18 +309,19 @@ export default function Home() {
                 <img
                   src="/images/fusionex.png"
                   alt="MRANTI Logo"
-                  className="object-contain w-[80px] lg:w-[150px] h-[100px] cursor-pointer"
+                  className="object-contain w-[120px] lg:w-[350px] h-[100px] cursor-pointer"
                 />
               </a>
               <a 
                 href="https://www.nintex.com/ "
                 target="_blank"
                 rel="noopener noreferrer"
+                className="mx-4 lg:mx-16"
               >
                 <img
                   src="/images/nintex.png"
                   alt="MRANTI Logo"
-                  className="object-contain w-[80px] lg:w-[150px] h-[100px] cursor-pointer"
+                  className="object-contain w-[100px] lg:w-[250px] h-[100px] cursor-pointer"
                 />
               </a>
               <a 
@@ -330,11 +332,12 @@ export default function Home() {
                 <img
                   src="/images/mranti.png"
                   alt="MRANTI Logo"
-                  className="object-contain w-[80px] lg:w-[150px] h-[100px] cursor-pointer"
+                  className="object-contain w-[80px] lg:w-[250px] h-[90px] cursor-pointer"
                 />
               </a>
             </div>
-            <h2 className="color-[#FFFFFF] font-normal font-agency mt-8">Benefits-in-kind Sponsors</h2>
+            <h2 
+              className="color-[#FFFFFF] font-normal font-agency mt-8 lg:mb-6">Benefits-in-kind Sponsors</h2>
             <a                 
               href="https://go.thecads.com/rubiqe_UM "
               target="_blank"
@@ -343,10 +346,10 @@ export default function Home() {
               <img
                 src="/images/cads.png"
                 alt="CADS Logo"
-                className="object-contain w-[70px] lg:w-[120px] h-[80px] cursor-pointer"
+                className="object-contain w-[60px] lg:w-[150px] h-[80px] cursor-pointer"
               />
-            </a>
-            {/* <svg
+            </a> */}
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="90"
               viewBox="0 0 24 24"
@@ -362,7 +365,7 @@ export default function Home() {
             </h2>
             <h2 className="mb-10 font-medium tracking-widest text-justify">
               sponsorpln2122@gmail.com
-            </h2> */}
+            </h2>
           </motion.div>
         </div>
       </Layout>
