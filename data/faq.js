@@ -157,13 +157,15 @@ const faq = [
   {
     question: "How can I confirm that my team is chosen for the final round?",
     answer: [
-      "For the final round, only the top twenty-five(25) teams from Open Category and top eight(8) teams from Closed Category of the preliminary round will proceed to the final round.",
+      "You will receive an email within 3 days of the preliminary round. You may also check on our social media site for the finalist announcement.",
     ],
   },
   {
     question: "Where will the final round be held?",
     answer: [
-      "It will be held at the Faculty of Computer Science and Information Technology, Universiti Malaya. However, if the pandemic situation is serious, we might switch the event mode to online.",
+      `Open Category: Physical at Faculty of Computer Science and Information Technology, Universiti Malaya
+\nClosed Category: Online
+  `,
     ],
   },
   {

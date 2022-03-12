@@ -50,7 +50,6 @@ const rules = [
 \n13.	Participants cannot leave the contest room during the contest without permission from the committee. 
 \n14.	No travel and accommodation fees will be covered by the organiser.
 \n15.	The decisions of the judges are final.
-\n16.	Note that there might be a change of event mode based on the pandemic situation. 
 `,
   },
   {
