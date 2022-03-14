@@ -134,23 +134,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Link href="/register">
-              <a>
-                <div className="flex items-center justify-end w-full">
-                  <div className="relative">
-                    <div className="absolute -top-[3px] left-0 bg-[#FCEF41] btn_1 z-10 px-11 py-2 cursor-pointer">
-                      <h3 className="font-bold text-black">REGISTER NOW!</h3>
-                    </div>
-                    <div className="absolute -top-2 -left-1 bg-[#FF00F5] btn_1 px-11 py-2 cursor-pointer">
-                      <h3 className="font-bold text-black">REGISTER NOW!</h3>
-                    </div>
-                    <div className="bg-[#00C2FF] px-11 py-2 btn_1 cursor-pointer">
-                      <h3 className="font-bold text-black">REGISTER NOW!</h3>
-                    </div>
+            <a>
+              <div className="flex items-center justify-end w-full">
+                <div className="relative">
+                  <div className="absolute -top-[3px] left-0 bg-[#FCEF41] btn_1 z-10 px-11 py-2 cursor-pointer">
+                    <h3 className="font-bold text-black">LET'S START</h3>
+                  </div>
+                  <div className="absolute -top-2 -left-1 bg-[#FF00F5] btn_1 px-11 py-2 cursor-pointer">
+                    <h3 className="font-bold text-black">LET'S START</h3>
+                  </div>
+                  <div className="bg-[#00C2FF] px-11 py-2 btn_1 cursor-pointer">
+                    <h3 className="font-bold text-black">LET'S START</h3>
                   </div>
                 </div>
-              </a>
-            </Link>
+              </div>
+            </a>
           </motion.div>
           <motion.div
             className="flex items-center"
