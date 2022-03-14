@@ -271,7 +271,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="flex items-center flex-col relative p-4 rounded-[20px]">
 
-            {/* <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">Diamond Sponsors</h2>
+            <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">Diamond Sponsors</h2>
             <div className="w-full  flex items-center justify-center">
               <a
                 href="https://www.moneylion.com/"
@@ -346,8 +346,8 @@ export default function Home() {
                 alt="CADS Logo"
                 className="object-contain w-[60px] lg:w-[150px] h-[80px] cursor-pointer"
               />
-            </a> */}
-            <svg
+            </a>
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="90"
               viewBox="0 0 24 24"
@@ -363,7 +363,7 @@ export default function Home() {
             </h2>
             <h2 className="mb-10 font-medium tracking-widest text-justify">
               sponsorpln2122@gmail.com
-            </h2>
+            </h2> */}
           </motion.div>
         </div>
       </Layout>
