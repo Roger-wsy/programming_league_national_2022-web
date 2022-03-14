@@ -37,19 +37,31 @@ export default function Home() {
     <div>
       <Head>
         <title>Programming League National 2022</title>
-        <meta name="description" content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
-        <link rel="canonical" href="https://www.programming-league.com"/>
-        <meta property="og:locale" content="en_US"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Programming League National 2022"/>
-        <meta property="og:description" content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!"/>
-        <meta property="og:url" content="https://www.programming-league.com"/>
-        <meta property="og:site_name" content="Programming League"/>
-        <meta property="og:image" content="https://www.programming-league.com/images/General Backdrop.png"/>
-        <meta property="og:image:width" content="1200"/>
-        <meta property="og:image:height" content="628"/>
-        <meta property="fb:app_id" content="2807450235954335"/>
+        <meta
+          name="description"
+          content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!"
+        />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <link rel="canonical" href="https://www.programming-league.com" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Programming League National 2022" />
+        <meta
+          property="og:description"
+          content="Programming League is an annual competitive programming contest organised by the FCSIT, UM. In 2022, it will be Malaysia's largest programming contest!"
+        />
+        <meta property="og:url" content="https://www.programming-league.com" />
+        <meta property="og:site_name" content="Programming League" />
+        <meta
+          property="og:image"
+          content="https://www.programming-league.com/images/General Backdrop.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta property="fb:app_id" content="2807450235954335" />
         <link rel="icon" href="/images/PLN-Glitch 1.png" />
       </Head>
       <Layout bg="bg1">
@@ -138,13 +150,13 @@ export default function Home() {
               <div className="flex items-center justify-end w-full">
                 <div className="relative">
                   <div className="absolute -top-[3px] left-0 bg-[#FCEF41] btn_1 z-10 px-11 py-2 cursor-pointer">
-                    <h3 className="font-bold text-black">LET'S START</h3>
+                    <h3 className="font-bold text-black">LET’S START</h3>
                   </div>
                   <div className="absolute -top-2 -left-1 bg-[#FF00F5] btn_1 px-11 py-2 cursor-pointer">
-                    <h3 className="font-bold text-black">LET'S START</h3>
+                    <h3 className="font-bold text-black">LET’S START</h3>
                   </div>
                   <div className="bg-[#00C2FF] px-11 py-2 btn_1 cursor-pointer">
-                    <h3 className="font-bold text-black">LET'S START</h3>
+                    <h3 className="font-bold text-black">LET’S START</h3>
                   </div>
                 </div>
               </div>
@@ -202,18 +214,22 @@ export default function Home() {
                 transition={{ duration: 1 }}
               >
                 <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
-                  The Programming League is an annual nationwide competitive programming competition 
-                  held by the Computer Society of Universiti Malaya (PEKOM) starting from 2014 where 
-                  teams of 3 will compete to solve algorithmic problems in the given time.
+                  The Programming League is an annual nationwide competitive
+                  programming competition held by the Computer Society of
+                  Universiti Malaya (PEKOM) starting from 2014 where teams of 3
+                  will compete to solve algorithmic problems in the given time.
                 </p>
                 <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
-                  This event invites all undergraduate students across Malaysia to tackle real-world 
-                  problems and challenge other teams in becoming the best among the field!
+                  This event invites all undergraduate students across Malaysia
+                  to tackle real-world problems and challenge other teams in
+                  becoming the best among the field!
                 </p>
                 <p className="mb-10 text-lg font-medium tracking-widest text-justify sm:text-2xl">
-                  As the committee members of Programming League National 2022, we aim to expose university 
-                  students to competitive programming and discover potential problem solvers to support the 
-                  industry’s growth as well as building a substantial technology ecosystem.
+                  As the committee members of Programming League National 2022,
+                  we aim to expose university students to competitive
+                  programming and discover potential problem solvers to support
+                  the industry’s growth as well as building a substantial
+                  technology ecosystem.
                 </p>
               </motion.div>
             </div>
@@ -269,10 +285,12 @@ export default function Home() {
             viewport={{ once: true }}
             whileInView="after"
             transition={{ duration: 1 }}
-            className="flex items-center flex-col relative p-4 rounded-[20px]">
-
-            <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">Diamond Sponsors</h2>
-            <div className="w-full  flex items-center justify-center">
+            className="flex items-center flex-col relative p-4 rounded-[20px]"
+          >
+            <h2 className="font-agency text-[#FFFFFF] font-extralight tracking-[0.05em]">
+              Diamond Sponsors
+            </h2>
+            <div className="flex items-center justify-center w-full">
               <a
                 href="https://www.moneylion.com/"
                 target="_blank"
@@ -297,9 +315,11 @@ export default function Home() {
                 />
               </a>
             </div>
-            <h2 className="color-[#FFFFFF] font-normal font-agency mt-6 lg:mb-6">Platinum Sponsors</h2>
-            <div className="w-full flex items-center justify-around">
-              <a 
+            <h2 className="color-[#FFFFFF] font-normal font-agency mt-6 lg:mb-6">
+              Platinum Sponsors
+            </h2>
+            <div className="flex items-center justify-around w-full">
+              <a
                 href="https://www.fusionexgroup.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -310,7 +330,7 @@ export default function Home() {
                   className="object-contain w-[120px] lg:w-[350px] h-[100px] cursor-pointer"
                 />
               </a>
-              <a 
+              <a
                 href="https://www.nintex.com/ "
                 target="_blank"
                 rel="noopener noreferrer"
@@ -322,7 +342,7 @@ export default function Home() {
                   className="object-contain w-[100px] lg:w-[250px] h-[100px] cursor-pointer"
                 />
               </a>
-              <a 
+              <a
                 href="http://mranti.my/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -334,9 +354,10 @@ export default function Home() {
                 />
               </a>
             </div>
-            <h2 
-              className="color-[#FFFFFF] font-normal font-agency mt-8 lg:mb-6">Benefits-in-kind Sponsors</h2>
-            <a                 
+            <h2 className="color-[#FFFFFF] font-normal font-agency mt-8 lg:mb-6">
+              Benefits-in-kind Sponsors
+            </h2>
+            <a
               href="https://go.thecads.com/rubiqe_UM "
               target="_blank"
               rel="noopener noreferrer"
