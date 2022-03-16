@@ -1,0 +1,327 @@
+{
+  "schema": {
+    "fields": [
+      { "name": "Team Name", "type": "string" },
+      { "name": "open", "type": "string" },
+      { "name": "name1", "type": "string" },
+      { "name": "uni1", "type": "string" },
+      { "name": "name2", "type": "string" },
+      { "name": "uni2", "type": "string" },
+      { "name": "name3", "type": "string" },
+      { "name": "uni3", "type": "string" }
+    ],
+    "pandas_version": "0.20.0"
+  },
+  "data": [
+    {
+      "Team Name": "RookieCoders",
+      "open": "false",
+      "name1": "TAN GENG CHENG",
+      "uni1": "UM",
+      "name2": "XIAOXIAO WU",
+      "uni2": "UM",
+      "name3": "NAH WAN JUN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "ABC",
+      "open": "false",
+      "name1": "OOI JIA MING",
+      "uni1": "UM",
+      "name2": "TAN ZI AN",
+      "uni2": "UM",
+      "name3": "LOW YAN RUO",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "A\u00b2I",
+      "open": "false",
+      "name1": "MUHAMMAD IDZHANS KHAIRI",
+      "uni1": "UM",
+      "name2": "ABRAR NAIM SHAHIRUDDIN BIN SHAHBUDIN",
+      "uni2": "UM",
+      "name3": "AFIQ DANISH BIN AFFINDI",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Hokkien Mee is Black",
+      "open": "false",
+      "name1": "YAU WEI HAN",
+      "uni1": "UM",
+      "name2": "LIM ZHENG YU",
+      "uni2": "UM",
+      "name3": "TAN ZI YANG",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Programming Noobs",
+      "open": "false",
+      "name1": "CHONG JE XUN",
+      "uni1": "UM",
+      "name2": "LEE ZE XUN",
+      "uni2": "UM",
+      "name3": "TEE YEE RONG",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Rawr",
+      "open": "false",
+      "name1": "SITI MAISARAH BINTI ISMAIL",
+      "uni1": "UM",
+      "name2": "MOHAMAD AZIZI BIN MOHD SAYUTI",
+      "uni2": "UM",
+      "name3": "NURUL JANNAH BINTI ISMAIL",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "NGT",
+      "open": "false",
+      "name1": "NG QIAO FANG",
+      "uni1": "UM",
+      "name2": "GOH QIAN XUAN",
+      "uni2": "UM",
+      "name3": "TAN WEI LING",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "RiOz",
+      "open": "false",
+      "name1": "MUHAMMAD AFIQ NADZMI BIN SULAIMAN",
+      "uni1": "UM",
+      "name2": "IFFAH SYAMIMI BINTI SHAZLI",
+      "uni2": "UM",
+      "name3": "MUHAMMAD ZAHIRUL ISYRAF BIN MOHAMED AIDI SHAHRIZ",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Quackalicious",
+      "open": "false",
+      "name1": "MUHAMMAD SHOWHERDA AD-DIN",
+      "uni1": "UM",
+      "name2": "MUJAHED YAHIA MURAD MOHAMMED",
+      "uni2": "UM",
+      "name3": "YAP YOONG SIEW",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "United Spirits of Malaysians",
+      "open": "false",
+      "name1": "SAM WEI HONG",
+      "uni1": "UM",
+      "name2": "DAMIA FATIHAH BINTI IMRAN",
+      "uni2": "UM",
+      "name3": "TASNEEM SOFIYYAH BINTI ABID",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Marigolds",
+      "open": "false",
+      "name1": "PHUAH EN YI",
+      "uni1": "UM",
+      "name2": "BEH SIN YEE",
+      "uni2": "UM",
+      "name3": "CHRISTINA KU PEI SAN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "XYZ",
+      "open": "false",
+      "name1": "CHOO XIANG LUN",
+      "uni1": "UM",
+      "name2": "HAM ZHI YING",
+      "uni2": "UM",
+      "name3": "TEEA YU XUAN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Cooll",
+      "open": "false",
+      "name1": "CHONG ZU YUAN",
+      "uni1": "UM",
+      "name2": "LEONG TZE HENG",
+      "uni2": "UM",
+      "name3": "LYU BINBIN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Snowball",
+      "open": "false",
+      "name1": "ARINA NATASHA BINTI HOURI",
+      "uni1": "UM",
+      "name2": "NUR DAMIA BINTI MOHD AZMIN",
+      "uni2": "UM",
+      "name3": "NUR SYAZA NABIHAH BINTI MOHD SAFARUDDIN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "No Idea",
+      "open": "false",
+      "name1": "WONG CHOU ZI",
+      "uni1": "UM",
+      "name2": "EWE YI QUAN",
+      "uni2": "UM",
+      "name3": "TEE YEE TAUNG",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "SMK Bukit Jelutong",
+      "open": "false",
+      "name1": "MUHAMMAD FARIS BIN AHMAD FAIZ",
+      "uni1": "UM",
+      "name2": "NUR FAIQAH BINTI AHMAD AZMAN",
+      "uni2": "UM",
+      "name3": "MUHAMMAD IKHMAL FAKHRI BIN MUHAMAD RUSHDI",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "AlgoMan",
+      "open": "false",
+      "name1": "TAN CHUN RONG",
+      "uni1": "UM",
+      "name2": "ENG JUN CHENG",
+      "uni2": "UM",
+      "name3": "NG JUN BIN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "JENNIE FANBOYS",
+      "open": "false",
+      "name1": "MOHAMAD IRFAN HAZIQ BIN MOHD KHAZANI",
+      "uni1": "UM",
+      "name2": "MUHAMMAD SHAFIQ AIMAN BIN NU MAHAMAD @ MARZUKI",
+      "uni2": "UM",
+      "name3": "MUHAMMAD AMMAR BIN MOHD HAZLAN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Rule of Three",
+      "open": "false",
+      "name1": "CHEONG JIN XUAN",
+      "uni1": "UM",
+      "name2": "CHUNG QI LIN",
+      "uni2": "UM",
+      "name3": "HOONG DAO JING",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "BaoBei",
+      "open": "false",
+      "name1": "NG PEI WEI",
+      "uni1": "UM",
+      "name2": "HONG KAE REN",
+      "uni2": "UM",
+      "name3": "TAN ZHI JIAN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Steady Bombibi",
+      "open": "false",
+      "name1": "LOW JIN SENG",
+      "uni1": "UM",
+      "name2": "CHEN CHING YEN",
+      "uni2": "UM",
+      "name3": "TAN JIN REN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Northern LRS",
+      "open": "false",
+      "name1": "POO WEI CHIEN",
+      "uni1": "UM",
+      "name2": "TAN GUO DONG",
+      "uni2": "UM",
+      "name3": "CHOONG YI YANG",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "blackhorse",
+      "open": "false",
+      "name1": "UMI ARIFAH BINTI BASRI",
+      "uni1": "UM",
+      "name2": "MUHAMMAD TAREQ ADAM BIN ELLIAS",
+      "uni2": "UM",
+      "name3": "MUHAMMAD IRFAN BIN MAR SIDEK",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "C4i",
+      "open": "false",
+      "name1": "NIK MUHAMMAD HARUN BIN NIK MOHD KAMAL",
+      "uni1": "UM",
+      "name2": "NUR IMAN BIN NORAZAN",
+      "uni2": "UM",
+      "name3": "SALEHUDDIN BIN MUSTAFA",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Java Juvenile",
+      "open": "false",
+      "name1": "ZHENG WU BANG",
+      "uni1": "UM",
+      "name2": "GUAN MING LI",
+      "uni2": "UM",
+      "name3": "ONG SHI NEE",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Error404",
+      "open": "false",
+      "name1": "NG XIAN HENG",
+      "uni1": "UM",
+      "name2": "KUEK ZI LII",
+      "uni2": "UM",
+      "name3": "AARON CHEE THIAN SHIN",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "outside",
+      "open": "false",
+      "name1": "AZZAM ALSHARAFI",
+      "uni1": "UM",
+      "name2": "MUHAMMAD SHABAN WARIS",
+      "uni2": "UM",
+      "name3": "MIKAEL KHUDIEV",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Unbelievable",
+      "open": "false",
+      "name1": "TAN JIA MIN",
+      "uni1": "UPM",
+      "name2": "LOW LI CI",
+      "uni2": "UPM",
+      "name3": "LONG YEH MIN",
+      "uni3": "UPM"
+    },
+    {
+      "Team Name": "Men In White",
+      "open": "false",
+      "name1": "AHMAD IRSYAD BIN AHMAD FAIZAL",
+      "uni1": "UM",
+      "name2": "AHMAD ALIEF HILMI BIN AHMAD NAZMI",
+      "uni2": "UM",
+      "name3": "ABANG MOHAMMAD FIRDAUS BIN ABANG MOHAMMAD TARMIZI",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "Error 404",
+      "open": "false",
+      "name1": "MUHAMAD IZZUL IZZANI BIN ABU BAKAR",
+      "uni1": "UM",
+      "name2": "LUQMAN HAKIM BIN MD SHANI",
+      "uni2": "UM",
+      "name3": "MOHD HAZRIN BIN MOHAMAD",
+      "uni3": "UM"
+    },
+    {
+      "Team Name": "codingHamsters",
+      "open": "false",
+      "name1": "MUHAMMAD QAYLEEF BIN JESMET RASDE",
+      "uni1": "UM",
+      "name2": "NISYA BINTANG QANITA",
+      "uni2": "UM",
+      "name3": "FARAH AFRINA DANIA BINTI AZMIR",
+      "uni3": "UM"
+    }
+  ]
+}
