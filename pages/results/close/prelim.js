@@ -35,7 +35,7 @@ const Home = ({ uni, json }) => {
         </div>
         <div className="relative w-full mb-10 group">
           <div className="absolute transition duration-500 rounded-md -inset-0.5 bg-gradient-to-r from-purple-800 to-red-800 opacity-100 group-hover:duration-200 group-hover:opacity-100 blur" />
-          <div className="relative grid w-full grid-cols-12 py-5 text-center bg-white rounded-md dark:bg-gray-900">
+          <div className="relative grid w-full grid-cols-12 py-5 text-center bg-gray-900 rounded-md dark:bg-gray-900">
             <div className="px-1 py-1 font-bold text-center">#</div>
             <div className="col-span-4 px-1 py-1 font-bold text-left">who</div>
             <div className="px-1 py-1 font-bold">=</div>
@@ -64,7 +64,7 @@ const Home = ({ uni, json }) => {
                     i <= 2 ? "opacity-90" : i <= 9 ? "opacity-50" : "opacity-20"
                   } group-hover:duration-200 group-hover:opacity-100 blur`}
                 />
-                <div className="relative grid w-full grid-cols-12 py-5 text-center bg-white rounded-md dark:bg-gray-900">
+                <div className="relative grid w-full grid-cols-12 py-5 text-center bg-gray-900 rounded-md dark:bg-gray-900">
                   <div className="col-span-1 text-center">{d?.["#"]}</div>
                   <div className="col-span-4 px-3 text-left">
                     <div>
