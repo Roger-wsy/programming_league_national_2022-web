@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../layouts/Layout";
+import Layout from "../../../layouts/Layout";
 
 const variant = {
   normal: {
@@ -55,24 +55,22 @@ export default function Home() {
           />
         </div> */}
         <div className="min-h-[60vh] w-full flex flex-col justify-around">
-          <Link href="/results/close">
+          <Link href="/results/open/prelim">
             <a>
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
                 <h1 className="font-surrend text-[#00FFC2] tracking-widest text-center">
-                  Closed Category
+                  Preliminary Round
                 </h1>
               </div>
             </a>
           </Link>
-          <Link href="/results/open">
-            <a>
-              <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
-                <h1 className="font-surrend text-[#00FFC2] tracking-widest">
-                  Open Category
-                </h1>
-              </div>
-            </a>
-          </Link>
+          {/* <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
+            <h1 className="font-surrend text-[#00FFC2] tracking-widest">
+              <Link href="/results/open">
+                <a>Final Round</a>
+              </Link>
+            </h1>
+          </div> */}
         </div>
       </Layout>
     </div>

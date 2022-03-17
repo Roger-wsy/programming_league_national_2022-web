@@ -1,6 +1,6 @@
 import Head from "next/head";
 import useSWR from "swr";
-import json from "../../data/close.json";
+import json from "../../../data/close.json";
 
 async function fetcher(input, init) {
   const res = await fetch(input, init);
