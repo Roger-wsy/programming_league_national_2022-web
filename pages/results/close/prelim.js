@@ -28,7 +28,7 @@ const Home = ({ uni, json }) => {
       <div className="tracking-widest layout">
         <div className="flex items-center justify-between w-full mb-8">
           <h2 className="w-full font-medium tracking-widest text-transparent font-surrend bg-clip-text bg-gradient-to-r from-purple-300 to-red-600">
-            PLN 2022 Open Preliminary
+            PLN 2022 Closed Preliminary
           </h2>
           <div className="flex gap-3">
             <a
