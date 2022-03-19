@@ -26,7 +26,7 @@ const Home = ({ uni, json }) => {
         <link rel="icon" href="/images/PLN-Glitch 1.png" />
       </Head>
       <div className="tracking-widest layout">
-        <div className="flex items-center justify-between w-full mb-8">
+        <div className="flex items-center justify-between w-full">
           <h2 className="w-full font-medium tracking-widest text-transparent font-surrend bg-clip-text bg-gradient-to-r from-purple-300 to-red-600">
             PLN 2022 Closed Preliminary
           </h2>
@@ -74,6 +74,9 @@ const Home = ({ uni, json }) => {
               )}
             </button>
           </div>
+        </div>
+        <div className="mt-2 mb-8 text-gray-400 dark:text-gray-600">
+          {data?.data?.length} teams / 30 teams
         </div>
         <div className="relative w-full mb-10 group">
           <div className="absolute transition duration-500 rounded-md -inset-0.5 bg-gradient-to-r from-purple-800 to-red-800 opacity-100 group-hover:duration-200 group-hover:opacity-100 blur" />
