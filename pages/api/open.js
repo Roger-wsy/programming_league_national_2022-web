@@ -22,7 +22,7 @@ export default async function handler(req, res) {
           if (i <= 3) {
             tableHeaders.push($(element).text().toLowerCase());
           } else {
-            const a = $(element).find("a");
+            const a = $(element).find("span");
             tableHeaders.push($(a).text().toLowerCase());
           }
         });

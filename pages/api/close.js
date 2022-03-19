@@ -19,7 +19,7 @@ export default async function handler(req, res) {
           if (i <= 3) {
             tableHeaders.push($(element).text().toLowerCase());
           } else {
-            const a = $(element).find("a");
+            const a = $(element).find("span");
             tableHeaders.push($(a).text().toLowerCase());
           }
         });
@@ -29,14 +29,17 @@ export default async function handler(req, res) {
       const tds = $(element).find("td");
       const tableRow = {};
       $(tds).each((i, element) => {
+        // console.log($(element).text());
         tableRow[tableHeaders[i]] = $(element).text();
       });
+      // console.log(tableRow);
       data.push(tableRow);
     });
+    // console.log(data);
     data.map((d) => {
       Object.keys(d).forEach((k) => (d[k] = d[k].trim()));
     });
-    console.log(data);
+    // console.log(data);
 
     return res.status(200).json({ data, message: "ok" });
   } catch (error) {
