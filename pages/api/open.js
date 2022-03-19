@@ -39,6 +39,7 @@ export default async function handler(req, res) {
     data.map((d) => {
       Object.keys(d).forEach((k) => (d[k] = d[k].trim()));
     });
+    data.pop();
     // console.log(data);
 
     return res.status(200).json({ data, message: "ok" });
