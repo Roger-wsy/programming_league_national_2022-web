@@ -82,7 +82,7 @@ const Home = ({ uni, json }) => {
         <div className="relative w-full mb-10 group">
           <div className="absolute transition duration-500 rounded-md -inset-0.5 bg-gradient-to-r from-purple-800 to-red-800 opacity-100 group-hover:duration-200 group-hover:opacity-100 blur" />
           <div
-            className={`relative grid w-full grid-cols-12 py-5 text-center bg-white dark:bg-gray-900 dark:text-white rounded-md`}
+            className={`relative grid w-full final_grid py-5 text-center bg-white dark:bg-gray-900 dark:text-white rounded-md`}
           >
             <div className="px-1 py-1 font-bold text-center">#</div>
             <div className="col-span-4 px-1 py-1 font-bold text-left">who</div>
@@ -93,6 +93,11 @@ const Home = ({ uni, json }) => {
             <div className="px-1 py-1 font-bold">C</div>
             <div className="px-1 py-1 font-bold">D</div>
             <div className="px-1 py-1 font-bold">E</div>
+            <div className="px-1 py-1 font-bold">F</div>
+            <div className="px-1 py-1 font-bold">G</div>
+            <div className="px-1 py-1 font-bold">H</div>
+            <div className="px-1 py-1 font-bold">I</div>
+            <div className="px-1 py-1 font-bold">J</div>
           </div>
         </div>
         <div className="w-full">
@@ -113,7 +118,7 @@ const Home = ({ uni, json }) => {
                   } group-hover:duration-200 group-hover:opacity-100 blur`}
                 />
                 <div
-                  className={`relative grid w-full grid-cols-12 py-5 text-center bg-white dark:bg-gray-900 dark:text-white rounded-md`}
+                  className={`relative grid w-full final_grid py-5 text-center bg-white dark:bg-gray-900 dark:text-white rounded-md`}
                 >
                   <div className="col-span-1 text-center">{d?.["#"]}</div>
                   <div className="col-span-4 px-3 text-left">

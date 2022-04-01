@@ -267,3 +267,7 @@ html {
 .scale_left {
   transform-origin: left;
 }
+
+.final_grid {
+  grid-template-columns: repeat(17, minmax(0, 1fr));
+}
