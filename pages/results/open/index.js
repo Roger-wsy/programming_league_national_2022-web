@@ -64,6 +64,15 @@ export default function Home() {
               </div>
             </a>
           </Link>
+          <Link href="/results/open/final">
+            <a>
+              <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
+                <h1 className="font-surrend text-[#00FFC2] tracking-widest text-center">
+                  Final Round
+                </h1>
+              </div>
+            </a>
+          </Link>
           {/* <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
             <h1 className="font-surrend text-[#00FFC2] tracking-widest">
               <Link href="/results/open">
