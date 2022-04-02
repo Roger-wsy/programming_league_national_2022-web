@@ -11,6 +11,7 @@ async function fetcher(input, init) {
 
 const Home = ({ uni, json }) => {
   const { data } = useSWR("/api/open/final", fetcher);
+  console.log(data);
 
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
@@ -165,6 +166,11 @@ const Home = ({ uni, json }) => {
                   <div className="">{d?.c}</div>
                   <div className="">{d?.d}</div>
                   <div className="">{d?.e}</div>
+                  <div className="">{d?.f}</div>
+                  <div className="">{d?.g}</div>
+                  <div className="">{d?.h}</div>
+                  <div className="">{d?.i}</div>
+                  <div className="">{d?.j}</div>
                 </div>
               </div>
             );
