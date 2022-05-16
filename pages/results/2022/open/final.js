@@ -1,6 +1,6 @@
 import Head from "next/head";
 import useSWR from "swr";
-import json from "../../../data/open.json";
+import json from "../../../../data/open.json";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
