@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/results/2020/close",
+      "destination": "/2020/scoreboards/html/scoreboard-closed.html"
+    },
+    {
+      "source": "/results/2020/open",
+      "destination": "/2020/scoreboards/html/scoreboard.html"
+    }
+  ]
+}

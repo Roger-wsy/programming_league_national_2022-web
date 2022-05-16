@@ -55,7 +55,7 @@ export default function Home() {
           />
         </div> */}
         <div className="min-h-[60vh] w-full flex flex-col justify-around">
-          <Link href="/results/close">
+          <Link href="/results/2022/close">
             <a>
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
                 <h1 className="font-surrend text-[#00FFC2] tracking-widest text-center">
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </a>
           </Link>
-          <Link href="/results/open">
+          <Link href="/results/2022/open">
             <a>
               <div className="border-4 border-[#00FFC2] tracking-widest py-6 rounded-lg flex justify-center">
                 <h1 className="font-surrend text-[#00FFC2] tracking-widest">
